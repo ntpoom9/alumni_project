@@ -198,6 +198,10 @@
         vertical-align: middle;
     }
 
+    /* td #first_year {
+        width: 2rem;
+    } */
+
     footer,
     #footer_link {
         color: #FFFFFF;
@@ -320,7 +324,7 @@
                             <tr class="titledata">
                                 <th>รหัสนักศึกษา</th>
                                 <th>คำนำหน้า</th>
-                                <th>ชื่อ</th>
+                                <th>&nbsp;&nbsp;ชื่อ&nbsp;&nbsp;</th>
                                 <th>นามสกุล</th>
                                 <th>ชื่อภาษอังกฤษ</th>
                                 <th>นามสกุลอังกฤษ</th>
@@ -342,8 +346,8 @@
                                 <td><?php echo $row['FName_eng']; ?></td>
                                 <td><?php echo $row['LName_eng']; ?></td>
                                 <td><?php echo $row['faculty']; ?></td>
-                                <td><?php echo $row['section_name']; ?></td>
-                                <td><?php echo $row['section_num']; ?></td>
+                                <td><?php echo $row['major']; ?></td>
+                                <td><?php echo $row['section']; ?></td>
                                 <td><?php echo $row['first_year']; ?></td>
                                 <td><?php echo $row['Province']; ?></td>
 

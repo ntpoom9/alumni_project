@@ -439,10 +439,10 @@ $session = session(); ?>
                             <p><span><?php echo  $session->get('faculty'); ?></span></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('section_name'); ?></span></p>
+                            <p><span><?php echo  $session->get('major'); ?></span></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('section_num'); ?></span></p>
+                            <p><span><?php echo  $session->get('section'); ?></span></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('edu_level'); ?></span></p>

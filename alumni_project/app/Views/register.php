@@ -325,16 +325,14 @@
 
                     <div class="form-group">
                         <label for="name">สาขา</label>
-                        <input type="text" name="section_name" id="section_name" required=""
-                            value="<?= set_value('section_name'); ?>">
+                        <input type="text" name="major" id="major" required="" value="<?= set_value('major'); ?>">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name">หมู่เรียน</label>
-                        <input type="text" name="section_num" id="section_num" required=""
-                            value="<?= set_value('section_num'); ?>">
+                        <input type="text" name="section" id="section" required="" value="<?= set_value('section'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">ปีที่เข้าศึกษา</label>
