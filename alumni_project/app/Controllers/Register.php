@@ -77,10 +77,9 @@ class Register extends Controller
                 'Zipcode' => $this->request->getVar('Zipcode'),
                 'phone_number' => $this->request->getVar('phone_number'),
             ];
-           
-            $model->save($data);
             
-            return redirect()->to('/login');
+            $model->save($data);
+           return redirect()->to('/login');
         }
         
         else {

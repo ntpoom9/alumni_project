@@ -556,13 +556,17 @@
                     icon: "warning",
                     button: "OK",
                 });
-            } else {
-                swal({
+            } 
+            else {
+               
+                    swal({
                     title: "ลงทะเบียนสำเร็จแล้ว!!",
                     text: "คลิกที่ปุ่ม!!",
                     icon: "success",
-                    button: "OK",
-                });
+                    confirmButtonText: "OK",                   
+                    });
+                
+                
             }
             
         }
