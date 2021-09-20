@@ -117,7 +117,6 @@
         padding: 5px;
         border-color: lightgrey;
         border-radius: 1px;
-
     }
 
     #input_label1.col {}

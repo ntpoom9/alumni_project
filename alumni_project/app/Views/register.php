@@ -30,7 +30,7 @@
     #container {
         background-color: lightgray;
         width: 100%;
-        height: 1400px;
+        height: 1500px;
     }
 
     .navbar-brand {
@@ -91,6 +91,9 @@
 
     input {
         font-weight: 300;
+        padding: 2px;
+        border-color: lightgrey;
+        border-radius: 1px;
     }
 
     .form-row {
@@ -173,23 +176,25 @@
         font-weight: 300;
 
     }
+
     #sexText {
-            display: inline;
-        }
+        display: inline;
+    }
+
     #sexMr {
-            padding-top: 30px;
-            width: 60px;
-        }
+        padding-top: 30px;
+        width: 60px;
+    }
 
-        #sexMrs {
-            padding-top: 30px;
-            width: 60px;
-        }
+    #sexMrs {
+        padding-top: 30px;
+        width: 60px;
+    }
 
-        #sexLabel {
-            padding-top: 5px;
-            width: 0px;
-        }
+    #sexLabel {
+        padding-top: 5px;
+        width: 0px;
+    }
     </style>
 
 
@@ -254,7 +259,7 @@
                     <p><span>ลงทะเบียนศิษย์เก่า</span></p>
                 </div>
 
-<!-- ------------------------------------------------(ข้อมูลนักศึกษา)---------------------------------------------------------------- -->
+                <!-- ------------------------------------------------(ข้อมูลนักศึกษา)---------------------------------------------------------------- -->
                 <hr>
                 <div id="hr">ข้อมูลนักศึกษา</div>
 
@@ -331,7 +336,7 @@
 
 
 
-   <!-- ------------------------------------------(ข้อมูลส่วนบุค)------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------(ข้อมูลส่วนบุค)------------------------------------------------------------------------- -->
                 <hr>
                 <div id="hr">ข้อมูลส่วนบุคล</div>
 
@@ -390,7 +395,7 @@
                     </div>
                 </div>
 
-                
+
 
 
 
@@ -445,11 +450,13 @@
                     </div>
                 </div>
 
+                <div id="hr">ที่อยู่ปัจจุบัน</div>
+
                 <div class="form-row">
                     <div class="form-group" id="regis0">
-                        <label for="name">ที่อยู่</label>
+                        <label for="name">บ้านเลขที่ และ หมู่</label>
                         <input style="width: 98px;" type="text" name="Address" id="Address" required=""
-                            value="<?= set_value('Address'); ?>">
+                            value="<?= set_value('Address'); ?>" placeholder="เช่น 96/4 ม.18">
                     </div>
                     <div class="form-group">
                         <label for="name">ตำบล</label>
