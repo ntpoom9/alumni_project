@@ -194,9 +194,42 @@ $session = session(); ?>
         padding-left: 8px;
     }
 
+    .address_div {
+        width: 130px;
+        height: 80px;
+        /* background-color: rgba(230, 115, 198, 0.6274509803921569); */
+        background-color: #023e8a;
+        border-color: rgba(255, 255, 255, 1);
+        font-weight: lighter;
+        font-style: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 7px;
+        margin-bottom: 3px;
+        padding-left: 8px;
+    }
+
+
     .u13_div {
         width: 280px;
         height: 39px;
+        /* background-color: rgba(230, 115, 198, 0.34509803921568627); */
+        background-color: #caf0f8;
+        border-color: rgba(255, 255, 255, 1);
+        font-weight: lighter;
+        font-style: normal;
+        font-size: 16px;
+        color: #000000;
+        text-align: left;
+        padding: 7px;
+        margin-bottom: 3px;
+        padding-left: 8px;
+    }
+
+    .address_div_data {
+        width: 280px;
+        height: 80px;
         /* background-color: rgba(230, 115, 198, 0.34509803921568627); */
         background-color: #caf0f8;
         border-color: rgba(255, 255, 255, 1);
@@ -401,18 +434,18 @@ $session = session(); ?>
                         <div id="u12-1_div" class="u12_div">
                             <p><span>กลุ่มเลือด</span></p>
                         </div>
-                        <div id="u12-1_div" class="u12_div">
+                        <div id="u12-1_div" class="address_div">
                             <p><span>ที่อยู่</span></p>
                         </div>
-                        <div id="u12-1_div" class="u12_div">
+                        <!-- <div id="u12-1_div" class="u12_div">
                             <p><span>ตำบล</span></p>
                         </div>
                         <div id="u12-1_div" class="u12_div">
                             <p><span>จังหวัด</span></p>
                         </div>
                         <div id="u12-1_div" class="u12_div">
-                            <p><span>อำเภอ</span></p>
-                        </div>
+                            <p><span>อำเภอ</span></p> -->
+                        <!-- </div> -->
                         <div id="u12-1_div" class="u12_div">
                             <p><span>เบอร์โทรติดต่อ</span></p>
                         </div>
@@ -432,7 +465,7 @@ $session = session(); ?>
                             </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('FName_eng')." ".$session->get('LName_eng'); ?></span>
+                            <p><span><?php echo   $session->get('sex')." ".$session->get('FName_eng')." ".$session->get('LName_eng'); ?></span>
                             </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
@@ -478,19 +511,11 @@ $session = session(); ?>
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('blood_type'); ?></span></p>
                         </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('Address'); ?></span>
+                        <div id="u12-1_div" class="address_div_data">
+                            <p><span><?php echo  "บ้านเลขที่ ".$session->get('Address')." ตำบล ". $session->get('SubDistrict')."<br>อำเภอ ".$session->get('District')." จังหวัด ".$session->get('Province')."<br>รหัสไปรษณีย์ ".$session->get('Zipcode'); ?></span>
                             </p>
                         </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('SubDistrict'); ?></span></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('District'); ?></span></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('Province'); ?></span></p>
-                        </div>
+
                         <div id="u12-1_div" class="u13_div">
                             <p><span>0<?php echo  $session->get('phone_number'); ?></span></p>
                         </div>
