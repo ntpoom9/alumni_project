@@ -120,7 +120,7 @@
 
     }
 
-    #input_label1.col {}
+    
 
     #input_label2 {
         padding: 0px;
@@ -267,7 +267,7 @@
                     <tbody>
 
                         <td colspan="6" class="hiddenRow">
-                            <div class="accordian-body collapse in" id="demo1" aria-expanded="true" style="">
+                            <div class="accordian-body collapse in" id="demo1" aria-expanded="true" >
 
                                 <form action="/Seachdata/seach" method="post">
                                     <div class="row" id="row_seachoption">
