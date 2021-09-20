@@ -117,7 +117,6 @@
         padding: 5px;
         border-color: lightgrey;
         border-radius: 1px;
-
     }
 
     #input_label1.col {}
@@ -351,7 +350,7 @@
                                 <td><?php echo $row['faculty']; ?></td>
                                 <td><?php echo $row['major']; ?></td>
                                 <td><?php echo $row['section']; ?></td>
-                                <td id="first_year"><?php echo $row['first_year']; ?></td>
+                                <td><?php echo $row['first_year']; ?></td>
                                 <td><?php echo $row['Province']; ?></td>
 
                             </tr>

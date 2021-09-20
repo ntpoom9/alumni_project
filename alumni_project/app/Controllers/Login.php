@@ -33,6 +33,7 @@ class Login extends Controller
                     'FName_eng' => $data['FName_eng'],
                     'LName_eng' => $data['LName_eng'],
                     'id_cardnumber' => $data['id_cardnumber'],
+                    'sex' => $data['sex'],
                     'faculty' => $data['faculty'],
                     'major' => $data['major'],
                     'section' => $data['section'],
