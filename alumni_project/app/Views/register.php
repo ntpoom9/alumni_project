@@ -20,188 +20,185 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
 
-        
-    body {
-        font-family: 'Kanit', sans-serif;
-    }
+        #container {
+            background-color: lightgray;
+            width: 100%;
+            height: 1500px;
+        }
 
-    #container {
-        background-color: lightgray;
-        width: 100%;
-        height: 1500px;
-    }
+        .navbar-brand {
+            color: #FFFFFF;
+            font-size: 30px;
+            font-weight: bold;
+            left: 10px;
+        }
 
-    .navbar-brand {
-        color: #FFFFFF;
-        font-size: 30px;
-        font-weight: bold;
-        left: 10px;
-    }
+        .navbar-brand:hover {
+            color: #FFFFFF;
 
-    .navbar-brand:hover {
-        color: #FFFFFF;
+        }
 
-    }
+        .nav-link:hover {
+            color: #FFFFFF;
+            background-color: #1E90FF;
+        }
 
-    .nav-link:hover {
-        color: #FFFFFF;
-        background-color: #1E90FF;
-    }
+        .nav-link:visited {
+            color: #FFFFFF;
+        }
 
-    .nav-link:visited {
-        color: #FFFFFF;
-    }
-
-    .bg-dark {
-        box-shadow: 0px 5px 5px rgb(0 0 0 / 35%);
-    }
+        .bg-dark {
+            box-shadow: 0px 5px 5px rgb(0 0 0 / 35%);
+        }
 
 
-    #u0_div {
+        #u0_div {
 
-        margin-bottom: 10px;
-        margin-top: 50px;
-        width: 668px;
-        background: inherit;
-        background-color: white;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px rgb(0 0 0 / 35%);
-    }
+            margin-bottom: 10px;
+            margin-top: 50px;
+            width: 668px;
+            background: inherit;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgb(0 0 0 / 35%);
+        }
 
-    #u1_text {
-        font-weight: 700;
-        font-style: normal;
-        font-size: 24px;
-        letter-spacing: 0.4px;
-        text-align: center;
-        padding-top: 25px;
-    }
+        #u1_text {
+            font-weight: 700;
+            font-style: normal;
+            font-size: 24px;
+            letter-spacing: 0.4px;
+            text-align: center;
+            padding-top: 25px;
+        }
 
-    label {
-        font-size: 14px;
-        font-weight: 600;
-        font-style: inherit;
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            font-style: inherit;
 
-        margin-bottom: 2px;
-        display: block;
-    }
+            margin-bottom: 2px;
+            display: block;
+        }
 
-    input{
-        font-weight: 300;
-        padding: 2px;
-        border-color: lightgrey;
-        border-radius: 1px;
-    }
-    
-    .select{
-        font-weight: 300;
-        padding: 2px;
-        border-color: lightgrey;
-        border-radius: 1px;
-    }
+        input {
+            font-weight: 300;
+            padding: 2px;
+            border-color: lightgrey;
+            border-radius: 1px;
+        }
 
-    .form-row {
-        display: flex;
-        padding-left: 50px;
-        padding-bottom: 7px;
-    }
+        .select {
+            font-weight: 300;
+            padding: 2px;
+            border-color: lightgrey;
+            border-radius: 1px;
+        }
+
+        .form-row {
+            display: flex;
+            padding-left: 50px;
+            padding-bottom: 7px;
+        }
 
 
-    .form-row .form-group {
-        padding: 5px 2px;
-    }
+        .form-row .form-group {
+            padding: 5px 2px;
+        }
 
-    .register-form {
-        padding: 0 10px 40px;
-        padding-bottom: 20px;
-    }
+        .register-form {
+            padding: 0 10px 40px;
+            padding-bottom: 20px;
+        }
 
-    .btn {
-        width: 406px;
-    }
+        .btn {
+            width: 406px;
+        }
 
-    #btn {
-        padding: 10px 10px 10px 110px;
-    }
+        #btn {
+            padding: 10px 10px 10px 110px;
+        }
 
-    .select {
-        width: 60px;
+        .select {
+            width: 60px;
 
-        font-size: inherit;
-        line-height: inherit;
-        height: 30px;
-    }
+            font-size: inherit;
+            line-height: inherit;
+            height: 30px;
+        }
 
-    #regis0 {
-        padding-left: 65px;
-    }
+        #regis0 {
+            padding-left: 65px;
+        }
 
-    #hr {
-        border-bottom: 1px;
-        font-size: 15px;
-        font-weight: 700;
-        margin-bottom: 2px;
-        display: block;
-        padding-left: 10px;
-    }
+        #hr {
+            border-bottom: 1px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            display: block;
+            padding-left: 10px;
+        }
 
-    #date {
-        width: 200px;
-    }
+        #date {
+            width: 200px;
+        }
 
-    #text0 {
-        padding-left: 20px;
-    }
+        #text0 {
+            padding-left: 20px;
+        }
 
-    #faculty,
-    #edu_level {
-        width: 200px;
-    }
+        #faculty,
+        #edu_level {
+            width: 200px;
+        }
 
-    #u235 {
-        border-width: 0px;
-        position: absolute;
-        top: 130px;
-        display: flex;
-        font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 15px;
-    }
+        #u235 {
+            border-width: 0px;
+            position: absolute;
+            top: 130px;
+            display: flex;
+            font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 15px;
+        }
 
-    footer,
-    #footer_link {
-        color: #FFFFFF;
-        text-decoration: none;
-    }
+        footer,
+        #footer_link {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
 
-    #backto {
-        font-family: 'Kanit', sans-serif;
-        font-weight: 300;
+        #backto {
+            font-family: 'Kanit', sans-serif;
+            font-weight: 300;
 
-    }
+        }
 
-    #sexText {
-        display: inline;
-    }
+        #sexText {
+            display: inline;
+        }
 
-    #sexMr {
-        padding-top: 30px;
-        width: 60px;
-    }
+        #sexMr {
+            padding-top: 30px;
+            width: 60px;
+        }
 
-    #sexMrs {
-        padding-top: 30px;
-        width: 60px;
-    }
+        #sexMrs {
+            padding-top: 30px;
+            width: 60px;
+        }
 
-    #sexLabel {
-        padding-top: 5px;
-        width: 0px;
-    }
-
+        #sexLabel {
+            padding-top: 5px;
+            width: 0px;
+        }
     </style>
 
 
@@ -239,7 +236,7 @@
                 </div>
             </div>
         </nav>
-        
+
         <?php if (isset($validation)) : ?>
             <div class="alert alert-danger"><?= $validation->listErrors(); ?></div>
         <?php endif; ?>
@@ -249,7 +246,7 @@
 
             <!--------------------------------------(ข้อมูลนักศึกษา)------------------------------------------------------>
 
-            <form action="/register/save" method="post" class="register-form">
+            <form id="create-form" action="/register/save" method="post" class="register-form">
 
                 <a style="color:black" href="/home">
                     <div id="u235" class="ax_default label" style="cursor: pointer;">
@@ -449,17 +446,20 @@
                     </div>
                 </div>
 
+
+                <!-- -------------------------------------------(ที่อยู่)---------------------------------------------------------------------------- -->
+                <hr>
                 <div id="hr">ที่อยู่ปัจจุบัน</div>
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
 
-                        <label for="name">ที่อยู่</label>
-                        <input style="width: 98px;" type="text" name="Address" id="Address" required="" value="<?= set_value('Address'); ?>">
+                        <!-- <label for="name">ที่อยู่</label>
+                        <input style="width: 98px;" type="text" name="Address" id="Address" required="" value="<? //=  set_value('Address'); 
+                                                                                                                ?>"> -->
 
                         <label for="name">บ้านเลขที่ และ หมู่</label>
-                        <input style="width: 98px;" type="text" name="Address" id="Address" required=""
-                            value="<?= set_value('Address'); ?>" placeholder="เช่น 96/4 ม.18">
+                        <input style="width: 200px;" type="text" name="Address" id="Address" required="" value="<?= set_value('Address'); ?>" placeholder="เช่น 96/4 ม.18">
 
                     </div>
                     <div class="form-group">
@@ -485,8 +485,8 @@
 
 
 
-                <div id="btn">
-                    <button type="submit" class="btn btn-primary">ลงทะเบียน</button>
+                <div id="btn" onclick="submit()">
+                    <button type="submit" id="submit" class="btn btn-primary">ลงทะเบียน</button>
                 </div>
 
             </form>
@@ -506,8 +506,8 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         function upperCharacter() {
             var x = document.getElementById("FName_eng");
@@ -515,22 +515,115 @@
             x.value = x.value.toUpperCase();
             y.value = y.value.toUpperCase();
         }
-    </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            <?php  if (session()->getFlashdata('status')) { ?>
-            swal({
-                title: "<?=  session()->setFlashdata('status') ?>",
-                text: "<?=  session()->setFlashdata('status_text') ?>",
-                icon: "<?=  session()->setFlashdata('status_icon') ?>",
-                button: "OK",
-            });
-        });
-        
 
-        <?php  }  ?>
+        function submit() {
+            var stu_id = $("#stu_id").val();
+            var password = $("#password").val();
+            var name_prefix = $("#name_prefix").val();
+            var FName = $("#FName").val();
+            var LName = $("#LName").val();
+            var FName_eng = $("#FName_eng").val();
+            var LName_eng = $("#LName_eng").val();
+            var id_cardnumber = $("#id_cardnumber").val();
+            var sex = $("#sex").val();
+            var faculty = $("#faculty").val();
+            var major = $("#major").val();
+            var edu_level = $("#edu_level").val();
+            var first_year = $("#first_year").val();
+            var d_m_y_birth = $("#d_m_y_birth").val();
+            var province_birth = $("#province_birth").val();
+            var nationality = $("#nationality").val();
+            var religion = $("#religion").val();
+            var Address = $("#Address").val();
+            var SubDistrict = $("#SubDistrict").val();
+            var District = $("#District").val();
+            var Province = $("#Province").val();
+            var Zipcode = $("#Zipcode").val();
+            var phone_number = $("#phone_number").val();
+
+
+            if (stu_id == '' || password == '' || name_prefix == '' ||
+                FName == '' || LName == '' || FName_eng == '' ||
+                LName_eng == '' || id_cardnumber == '' || sex == '' ||
+                faculty == '' || major == '' || edu_level == '' ||
+                first_year == '' || d_m_y_birth == '' || province_birth == '' ||
+                nationality == '' || religion == '' || Address == '' ||
+                SubDistrict == '' || District == '' || Province == '' ||
+                Zipcode == '' || phone_number == '') {
+                swal({
+                    title: "กรอกข้ออมูลไม่ครบ!",
+                    text: "กรุณาเช็คข้อมูลอีกครั้ง!!",
+                    icon: "warning",
+                    button: "OK",
+                });
+            } else {
+                swal({
+                    title: "ลงทะเบียนสำเร็จแล้ว!!",
+                    text: "คลิกที่ปุ่ม!!",
+                    icon: "success",
+                    button: "OK",
+                });
+            }
+            
+        }
+
+
+        // $('#btn').click(function() {
+
+        //     var stu_id = $("#stu_id").val();
+        //     var password = $("#password").val();
+        //     var name_prefix = $("#name_prefix").val();
+        //     var FName = $("#FName").val();
+        //     var LName = $("#LName").val();
+        //     var FName_eng = $("#FName_eng").val();
+        //     var LName_eng = $("#LName_eng").val();
+        //     var id_cardnumber = $("#id_cardnumber").val();
+        //     var sex = $("#sex").val();
+        //     var faculty = $("#faculty").val();
+        //     var major = $("#major").val();
+        //     var edu_level = $("#edu_level").val();
+        //     var first_year = $("#first_year").val();
+        //     var d_m_y_birth = $("#d_m_y_birth").val();
+        //     var province_birth = $("#province_birth").val();
+        //     var nationality = $("#nationality").val();
+        //     var religion = $("#religion").val();
+        //     var Address = $("#Address").val();
+        //     var SubDistrict = $("#SubDistrict").val();
+        //     var District = $("#District").val();
+        //     var Province = $("#Province").val();
+        //     var Zipcode = $("#Zipcode").val();
+        //     var phone_number = $("#phone_number").val();
+
+
+        //     if (stu_id == '' || password == '' || name_prefix == '' ||
+        //         FName == '' || LName == '' || FName_eng == '' ||
+        //         LName_eng == '' || id_cardnumber == '' || sex == '' ||
+        //         faculty == '' || major == '' || edu_level == '' ||
+        //         first_year == '' || d_m_y_birth == '' || province_birth == '' ||
+        //         nationality == '' || religion == '' || Address == '' ||
+        //         SubDistrict == '' || District == '' || Province == '' ||
+        //         Zipcode == '' || phone_number == '') {
+        //         swal({
+        //             title: "กรอกข้ออมูลไม่ครบ!",
+        //             text: "กรุณาเช็คข้อมูลอีกครั้ง!!",
+        //             icon: "warning",
+        //             button: "OK",
+        //         });
+        //     } else {
+        //         swal({
+        //             title: "ลงทะเบียนสำเร็จแล้ว!!",
+        //             text: "คลิกที่ปุ่ม!!",
+        //             icon: "success",
+        //             button: "OK",
+        //         });
+        //     }
+
+
+        // });
     </script>
+
+
+
 </body>
 
 </html>

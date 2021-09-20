@@ -32,4 +32,6 @@ class UserModel extends Model {
         'Zipcode',
         'phone_number'	
         ];
+
+       
 }
