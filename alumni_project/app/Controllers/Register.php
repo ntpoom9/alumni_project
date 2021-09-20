@@ -75,7 +75,10 @@ $data = [
 
 
     $model->save($data);
-    return redirect()->to('/login');
+    session()->setFlashdata('status_text','Yoy Successfully');
+    return redirect()->to('/login')
+    ->with('status_icon','wefwfe')
+    ->with('status','wefwfe')
     
     
 }else{
