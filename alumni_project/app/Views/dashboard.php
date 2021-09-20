@@ -34,6 +34,7 @@
                 <h3><?php echo "Welcome back, " . $session->get('FName'). " " .$session->get('LName'); ?></h3>
                 <br>
                 <a href="/logout" class="btn btn-danger">Logout</a>
+                <a href="/logout">Logout</a>
                 <a href="/index" class="btn btn-warning">Index</a>
             </div>
         </div>

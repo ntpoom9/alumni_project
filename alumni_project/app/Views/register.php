@@ -484,7 +484,7 @@
                 </div>
 
 
-
+                
                 <div id="btn" onclick="submit()">
                     <button type="submit" id="submit" class="btn btn-primary">ลงทะเบียน</button>
                 </div>
@@ -563,10 +563,8 @@
                     title: "ลงทะเบียนสำเร็จแล้ว!!",
                     text: "คลิกที่ปุ่ม!!",
                     icon: "success",
-                    confirmButtonText: "OK",                   
+                    confirmButtonText: "OK",                
                     });
-                
-                
             }
             
         }
