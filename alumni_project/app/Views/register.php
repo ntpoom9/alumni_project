@@ -484,7 +484,7 @@
                 </div>
 
 
-                
+
                 <div id="btn" onclick="submit()">
                     <button type="submit" id="submit" class="btn btn-primary">ลงทะเบียน</button>
                 </div>
@@ -508,7 +508,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+       
         function upperCharacter() {
             var x = document.getElementById("FName_eng");
             var y = document.getElementById("LName_eng");
@@ -556,18 +558,25 @@
                     icon: "warning",
                     button: "OK",
                 });
-            } 
-            else {
-               
-                    swal({
-                    title: "ลงทะเบียนสำเร็จแล้ว!!",
-                    text: "คลิกที่ปุ่ม!!",
-                    icon: "success",
-                    confirmButtonText: "OK",                
-                    });
+                
+            } else {
+
+                Swal.fire({
+                    
+                    icon: 'success',
+                    title: 'ลงทะเบียนสำเร็จแล้ว!!',
+                    showConfirmButton: false,
+                    timer: 1000000
+                });
+                // swal({
+                //     title: "ลงทะเบียนสำเร็จแล้ว!!",
+                //     text: "คลิกที่ปุ่ม!!",
+                //     icon: "success",
+                //     confirmButtonText: "OK",
+                // });
 
             }
-            
+
         }
 
 
