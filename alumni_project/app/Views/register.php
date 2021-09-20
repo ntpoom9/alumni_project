@@ -30,7 +30,7 @@
     #container {
         background-color: lightgray;
         width: 100%;
-        height: 1350px;
+        height: 1400px;
     }
 
     .navbar-brand {
@@ -173,6 +173,23 @@
         font-weight: 300;
 
     }
+    #sexText {
+            display: inline;
+        }
+    #sexMr {
+            padding-top: 30px;
+            width: 60px;
+        }
+
+        #sexMrs {
+            padding-top: 30px;
+            width: 60px;
+        }
+
+        #sexLabel {
+            padding-top: 5px;
+            width: 0px;
+        }
     </style>
 
 
@@ -236,78 +253,10 @@
                 <div id="u1_text">
                     <p><span>ลงทะเบียนศิษย์เก่า</span></p>
                 </div>
+
+<!-- ------------------------------------------------(ข้อมูลนักศึกษา)---------------------------------------------------------------- -->
                 <hr>
                 <div id="hr">ข้อมูลนักศึกษา</div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name" style="width: 61px;">คำนำหน้า</label>
-                        <select class="select" id="name_prefix" name="name_prefix">
-                            <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
-                            <option value="นาย">นาย</option>
-                            <option value="น.ส.">น.ส.</option>
-                            <option value="นาง">นาง</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">ชื่อ</label>
-                        <input type="text" name="FName" id="FName" required="" value="<?= set_value('FName'); ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="father_name">นามสกุล</label>
-                        <input type="text" name="LName" id="LName" required="" value="<?= set_value('lName'); ?>">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group" id="regis0">
-                        <label for="FnEng">ชื่อ(อังกฤษตัวใหญ่)</label>
-                        <input type="text" name="FName_eng" id="FName_eng" required=""
-                            value="<?= set_value('FName_eng'); ?>" onkeyup="upperCharacter()">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="LnEng">นามสกุล(อังกฤษตัวใหญ่)</label>
-                        <input type="text" name="LName_eng" id="LName_eng" required=""
-                            value="<?= set_value('LName_eng'); ?>" onkeyup="upperCharacter()">
-                    </div>
-                </div>
-
-
-                <div class="form-row">
-                    <div class="form-group" id="regis0">
-                        <label for="name">รหัสนักศึกษา</label>
-                        <input type="text" name="stu_id" id="stu_id" required="" value="<?= set_value('stu_id'); ?>">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group" id="regis0">
-                        <label for="name">รหัสผ่าน</label>
-                        <input type="password" name="password" id="password" required="">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group" id="regis0">
-                        <label for="name">ยืนยันรหัสผ่าน</label>
-                        <input type="password" name="confpassword" id="confpassword" required="">
-                    </div>
-                </div>
-
-                <hr>
-                <div id="hr">ข้อมูลส่วนตัว</div>
-
-
-
-
-                <div class="form-row">
-                    <div class="form-group" id="regis0">
-                        <label for="FnEng">เลขบัตรประชาชน</label>
-                        <input type="text" name="id_cardnumber" id="id_cardnumber" required=""
-                            value="<?= set_value('id_cardnumber'); ?>">
-                    </div>
-                </div>
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
@@ -357,6 +306,91 @@
                             value="<?//= set_value('edu_level'); ?>"> -->
                     </div>
                 </div>
+
+
+                <div class="form-row">
+                    <div class="form-group" id="regis0">
+                        <label for="name">รหัสนักศึกษา</label>
+                        <input type="text" name="stu_id" id="stu_id" required="" value="<?= set_value('stu_id'); ?>">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" id="regis0">
+                        <label for="name">รหัสผ่าน</label>
+                        <input type="password" name="password" id="password" required="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" id="regis0">
+                        <label for="name">ยืนยันรหัสผ่าน</label>
+                        <input type="password" name="confpassword" id="confpassword" required="">
+                    </div>
+                </div>
+
+
+
+   <!-- ------------------------------------------(ข้อมูลส่วนบุค)------------------------------------------------------------------------- -->
+                <hr>
+                <div id="hr">ข้อมูลส่วนบุคล</div>
+
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" style="width: 61px;">คำนำหน้า</label>
+                        <select class="select" id="name_prefix" name="name_prefix">
+                            <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="นาย">นาย</option>
+                            <option value="น.ส.">น.ส.</option>
+                            <option value="นาง">นาง</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">ชื่อ</label>
+                        <input type="text" name="FName" id="FName" required="" value="<?= set_value('FName'); ?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="father_name">นามสกุล</label>
+                        <input type="text" name="LName" id="LName" required="" value="<?= set_value('lName'); ?>">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" id="regis0">
+                        <label for="FnEng">ชื่อ(อังกฤษตัวใหญ่)</label>
+                        <input type="text" name="FName_eng" id="FName_eng" required=""
+                            value="<?= set_value('FName_eng'); ?>" onkeyup="upperCharacter()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="LnEng">นามสกุล(อังกฤษตัวใหญ่)</label>
+                        <input type="text" name="LName_eng" id="LName_eng" required=""
+                            value="<?= set_value('LName_eng'); ?>" onkeyup="upperCharacter()">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" id="regis0">
+                        <label for="FnEng">เลขบัตรประชาชน</label>
+                        <input type="text" name="id_cardnumber" id="id_cardnumber" required=""
+                            value="<?= set_value('id_cardnumber'); ?>">
+                    </div>
+                    <div style="display:flex; padding-left: 13px;">
+                        <label id="sexLabel">เพศ</label>
+                        <div class="form-group" id="sexMr">
+
+                            <input class="form-check-input" type="radio" name="sex" value="Mr.">
+                            <label id="sexText">ชาย</label>
+                        </div>
+                        <div class="form-group" id="sexMrs">
+                            <input class="form-check-input" type="radio" name="sex" value="Mrs.">
+                            <label id="sexText">หญิง</label>
+                        </div>
+                    </div>
+                </div>
+
+                
 
 
 
