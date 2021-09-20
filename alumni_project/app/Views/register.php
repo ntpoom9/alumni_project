@@ -21,176 +21,7 @@
 
     <style>
 
-        body {
-            font-family: 'Kanit', sans-serif;
-        }
-
-        #container {
-            background-color: lightgray;
-            width: 100%;
-            height: 1400px;
-        }
-
-        .navbar-brand {
-            color: #FFFFFF;
-            font-size: 30px;
-            font-weight: bold;
-            left: 10px;
-        }
-
-        .navbar-brand:hover {
-            color: #FFFFFF;
-
-        }
-
-        .nav-link:hover {
-            color: #FFFFFF;
-            background-color: #1E90FF;
-        }
-
-        .nav-link:visited {
-            color: #FFFFFF;
-        }
-
-        .bg-dark {
-            box-shadow: 0px 5px 5px rgb(0 0 0 / 35%);
-        }
-
-
-        #u0_div {
-
-            margin-bottom: 10px;
-            margin-top: 50px;
-            width: 668px;
-            background: inherit;
-            background-color: white;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 5px 5px 5px rgb(0 0 0 / 35%);
-        }
-
-        #u1_text {
-            font-weight: 700;
-            font-style: normal;
-            font-size: 24px;
-            letter-spacing: 0.4px;
-            text-align: center;
-            padding-top: 25px;
-        }
-
-        label {
-            font-size: 14px;
-            font-weight: 600;
-            font-style: inherit;
-
-            margin-bottom: 2px;
-            display: block;
-        }
-
-        input {
-            font-weight: 300;
-        }
-
-        .form-row {
-            display: flex;
-            padding-left: 50px;
-            padding-bottom: 7px;
-        }
-
-
-        .form-row .form-group {
-            padding: 5px 2px;
-        }
-
-        .register-form {
-            padding: 0 10px 40px;
-            padding-bottom: 20px;
-        }
-
-        .btn {
-            width: 406px;
-        }
-
-        #btn {
-            padding: 10px 10px 10px 110px;
-        }
-
-        .select {
-            width: 60px;
-
-            font-size: inherit;
-            line-height: inherit;
-            height: 30px;
-        }
-
-        #regis0 {
-            padding-left: 65px;
-        }
-
-        #hr {
-            border-bottom: 1px;
-            font-size: 15px;
-            font-weight: 700;
-            margin-bottom: 2px;
-            display: block;
-            padding-left: 10px;
-        }
-
-        #date {
-            width: 200px;
-        }
-
-        #text0 {
-            padding-left: 20px;
-        }
-
-        #faculty,
-        #edu_level {
-            width: 200px;
-        }
-
-        #u235 {
-            border-width: 0px;
-            position: absolute;
-            top: 130px;
-            display: flex;
-            font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 15px;
-        }
-
-        footer,
-        #footer_link {
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        #backto {
-            font-family: 'Kanit', sans-serif;
-            font-weight: 300;
-
-        }
-
-        #sexText {
-            display: inline;
-        }
-
-        #sexMr {
-            padding-top: 30px;
-            width: 60px;
-        }
-
-        #sexMrs {
-            padding-top: 30px;
-            width: 60px;
-        }
-
-        #sexLabel {
-            padding-top: 5px;
-            width: 0px;
-        }
-
+        
     body {
         font-family: 'Kanit', sans-serif;
     }
@@ -257,7 +88,14 @@
         display: block;
     }
 
-    input {
+    input{
+        font-weight: 300;
+        padding: 2px;
+        border-color: lightgrey;
+        border-radius: 1px;
+    }
+    
+    .select{
         font-weight: 300;
         padding: 2px;
         border-color: lightgrey;
@@ -615,14 +453,14 @@
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
-<<<<<<< HEAD
+
                         <label for="name">ที่อยู่</label>
                         <input style="width: 98px;" type="text" name="Address" id="Address" required="" value="<?= set_value('Address'); ?>">
-=======
+
                         <label for="name">บ้านเลขที่ และ หมู่</label>
                         <input style="width: 98px;" type="text" name="Address" id="Address" required=""
                             value="<?= set_value('Address'); ?>" placeholder="เช่น 96/4 ม.18">
->>>>>>> b0ee94dc50165b6a60f71451615d1a59cc6714d2
+
                     </div>
                     <div class="form-group">
                         <label for="name">ตำบล</label>
