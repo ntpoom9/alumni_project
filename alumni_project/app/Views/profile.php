@@ -465,7 +465,7 @@ $session = session(); ?>
                             </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('sex')." ".$session->get('FName_eng')." ".$session->get('LName_eng'); ?></span>
+                            <p><span><?php echo   $session->get('sex')." ".$session->get('FName_eng')." ".$session->get('LName_eng'); ?></span>
                             </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
