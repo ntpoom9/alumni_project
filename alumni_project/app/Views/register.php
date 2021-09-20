@@ -562,7 +562,7 @@
             } else {
 
                 Swal.fire({
-                    
+                
                     icon: 'success',
                     title: 'ลงทะเบียนสำเร็จแล้ว!!',
                     showConfirmButton: false,
