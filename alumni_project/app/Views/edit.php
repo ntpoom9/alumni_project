@@ -318,7 +318,7 @@ $session = session(); ?>
 
         <div id="u0_div" class="container">
 
-            <a style="color:black" href="/index">
+            <!-- <a style="color:black" href="/index">
                 <div id="u235" class="ax_default label" style="cursor: pointer;">
                     <div id="u235_text" class="text ">
                         <br>
@@ -327,7 +327,7 @@ $session = session(); ?>
                         </p>
                     </div>
                 </div>
-            </a>
+            </a> -->
 
             <form action="">
                 <div id="u1_text">
@@ -519,7 +519,8 @@ $session = session(); ?>
                 <div id="btn">
                     <center>
                         <button type="submit" id="submit" class="btn btn-warning">อัพเดทข้อมูล</button>
-                        <button class="btn btn-danger">ยกเลิก</button>
+                        <a href="/profile" class="btn btn-danger">ยกเลิก</a>
+
                     </center>
                 </div>
             </form>
