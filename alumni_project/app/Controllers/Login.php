@@ -55,11 +55,11 @@ class Login extends Controller
                 $session->set($ses_data);
                 return redirect()->to('/index');
             } else {
-                $session->setFlashdata('msg', 'Wrong password');
+                $session->setFlashdata('msg', 'รหัสผ่านไม่ถูก');
                 return redirect()->to('/login');
             }
         } else {
-            $session->setFlashdata('msg', 'Email not found');
+            $session->setFlashdata('msg', 'ไม่พบรหัสนักศึกษา');
             return redirect()->to('/login');
         }
     }
