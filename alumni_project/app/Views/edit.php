@@ -10,7 +10,7 @@ $session = session(); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Edit Profile</title>
     <!-- Boostrap -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -78,7 +78,7 @@ $session = session(); ?>
     #container {
         background-color: lightgray;
         width: 100%;
-        height: 1100px;
+        height: 1300px;
     }
 
     #u1_text {
@@ -92,7 +92,7 @@ $session = session(); ?>
 
     #u13_div {
         width: 192px;
-        height: 780px;
+        height: 907px;
         /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
         background-color: #001233;
 
@@ -100,8 +100,8 @@ $session = session(); ?>
 
     .form-row {
         display: flex;
-        padding-left: 20px;
-        padding-bottom: 7px;
+        padding-left: 8rem;
+        padding-bottom: 1rem;
     }
 
 
@@ -259,6 +259,10 @@ $session = session(); ?>
         font-size: 15px;
     }
 
+    #btn {
+        padding-bottom: 1rem;
+    }
+
     footer,
     #footer_link {
         color: #FFFFFF;
@@ -324,51 +328,11 @@ $session = session(); ?>
 
             <form action="">
                 <div id="u1_text">
-                    <p><span>ประวัติส่วนตัว</span></p>
+                    <p><span>แก้ไขประวัติส่วนตัว</span></p>
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group" style="padding-bottom: 20px; padding-right:4px">
-                        <div id="u13_div" class="">
-                            <div id="u14" class="ax_default box_3">
-                                <div id="u14_div" class=""></div>
-                                <div id="u14_text" class="text " style="display:none; visibility: hidden">
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div id="u18" class="ax_default box_3">
-                            <div id="u18_div" class=""></div>
-                            <div id="u16" class="ax_default box_3">
-
-                                <?php $stu_id= $session->get('stu_id');?>
-                                <a href="<?= base_url('profile/edit/'.$stu_id)?>" id="text">
-                                    <div id="u16_div">
-                                        <p><span>แก้ไขข้อมูลนักศึกษา</span></p>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div id="u18_div" class=""></div>
-                            <div id="u16" class="ax_default box_3">
-                                <a href="" id="text">
-                                    <div id="u16_div">
-                                        <p><span>เปลี่ยนรหัสผ่าน</span></p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div id="u18_div" class=""></div>
-                            <div id="u16" class="ax_default box_3">
-                                <a href="" id="text">
-                                    <div id="u16_div">
-                                        <p><span>พิมพ์ข้มูลนักศึกษา</span></p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
 
 
 
@@ -436,18 +400,21 @@ $session = session(); ?>
                         <div id="u12-1_div" class="u12_div">
                             <p><span>กลุ่มเลือด</span></p>
                         </div>
-                        <div id="u12-1_div" class="address_div">
+                        <div id="u12-1_div" class="u12_div">
                             <p><span>ที่อยู่</span></p>
                         </div>
-                        <!-- <div id="u12-1_div" class="u12_div">
+                        <div id="u12-1_div" class="u12_div">
                             <p><span>ตำบล</span></p>
+                        </div>
+                        <div id="u12-1_div" class="u12_div">
+                            <p><span>อำเภอ</span></p>
                         </div>
                         <div id="u12-1_div" class="u12_div">
                             <p><span>จังหวัด</span></p>
                         </div>
                         <div id="u12-1_div" class="u12_div">
-                            <p><span>อำเภอ</span></p> -->
-                        <!-- </div> -->
+                            <p><span>รหัสไปรษณีย์</span></p>
+                        </div>
                         <div id="u12-1_div" class="u12_div">
                             <p><span>เบอร์โทรติดต่อ</span></p>
                         </div>
@@ -500,7 +467,7 @@ $session = session(); ?>
                         </div>
 
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('province_birth'); ?></span></p>
+                            <p><input type="text" value="<?php echo  $session->get('province_birth'); ?>"></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('nationality'); ?></span></p>
@@ -511,36 +478,47 @@ $session = session(); ?>
 
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('blood_type'); ?></span></p>
+                            <p><input type="text" value="<?php echo  $session->get('blood_type'); ?>"></p>
                         </div>
-                        <div id="u12-1_div" class="address_div_data">
-                            <p><span><?php echo  "บ้านเลขที่ ".$session->get('Address')." ตำบล ". $session->get('SubDistrict')."<br>อำเภอ ".$session->get('District')." จังหวัด ".$session->get('Province')."<br>รหัสไปรษณีย์ ".$session->get('Zipcode'); ?></span>
-                            </p>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" value="<?php echo  $session->get('Address'); ?>"></p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" value="<?php echo  $session->get('SubDistrict'); ?>"></p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" value="<?php echo  $session->get('District'); ?>"></p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" value="<?php echo  $session->get('Province'); ?>"></p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" value="<?php echo  $session->get('Zipcode'); ?>"></p>
                         </div>
 
+
+
+                        <!-- <div id="u12-1_div" class="address_div_data">
+                            <p><span><?php echo  "บ้านเลขที่ ".$session->get('Address')." ตำบล ". $session->get('SubDistrict')."<br>อำเภอ ".$session->get('District')." จังหวัด ".$session->get('Province')."<br>รหัสไปรษณีย์ ".$session->get('Zipcode'); ?></span>
+                            </p>
+                        </div> -->
+
                         <div id="u12-1_div" class="u13_div">
-                            <p><span>0<?php echo  $session->get('phone_number'); ?></span></p>
+                            <p>+66 <input type="text" value="<?php echo  $session->get('phone_number'); ?>"></p>
                         </div>
 
 
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
 
-
+                <div id="btn">
+                    <center>
+                        <button type="submit" id="submit" class="btn btn-warning">อัพเดทข้อมูล</button>
+                        <button class="btn btn-danger">ยกเลิก</button>
+                    </center>
+                </div>
             </form>
 
         </div>

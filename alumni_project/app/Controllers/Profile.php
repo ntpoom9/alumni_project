@@ -13,4 +13,14 @@ class Profile extends Controller{
         // $data['users'] = $UserModel->fetch_data();
         return view('profile', $data);
     }
+    public function edit($stu_id=null) {
+        //    echo $stu_id;
+            $UserModel = new UserModel();
+    
+            // // โชว์ All จาก id 
+            $data['users'] = $UserModel->orderBy('stu_id', 'DESC')->findAll();
+    
+    
+            return view('edit', $data);
+        }
 }
