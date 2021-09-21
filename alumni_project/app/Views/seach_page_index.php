@@ -120,7 +120,7 @@
 
     }
 
-    
+
 
     #input_label2 {
         padding: 0px;
@@ -215,7 +215,7 @@
 <!-- Header -->
 <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">ISAC</a>
+        <a class="navbar-brand" href="/index">ISAC</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
@@ -267,7 +267,7 @@
                     <tbody>
 
                         <td colspan="6" class="hiddenRow">
-                            <div class="accordian-body collapse in" id="demo1" aria-expanded="true" >
+                            <div class="accordian-body collapse in" id="demo1" aria-expanded="true">
 
                                 <form action="/Seachdata/seach" method="post">
                                     <div class="row" id="row_seachoption">
