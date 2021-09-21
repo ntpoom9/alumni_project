@@ -78,7 +78,7 @@ $session = session(); ?>
     #container {
         background-color: lightgray;
         width: 100%;
-        height: 1350px;
+        height: 1100px;
     }
 
     #u1_text {
@@ -92,7 +92,7 @@ $session = session(); ?>
 
     #u13_div {
         width: 192px;
-        height: 865px;
+        height: 780px;
         /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
         background-color: #001233;
 
@@ -542,17 +542,17 @@ $session = session(); ?>
             </form>
 
         </div>
-        <footer class="bg-dark text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2020 Copyright:
-                <a class="text" href="#" id="footer_link">ISAC.org</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+
 
     </div>
-
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text" href="#" id="footer_link">ISAC.org</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 
 </html>
