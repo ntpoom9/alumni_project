@@ -32,7 +32,7 @@
     #container {
         background-color: lightgray;
         width: 100%;
-        height: 600px;
+        height: 880px;
     }
 
     .navbar-brand {
@@ -255,19 +255,21 @@
 
 
         </div>
-        <br>
-        <footer class="bg-dark text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2020 Copyright:
-                <a class="text" href="#" id="footer_link">ISAC.org</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+        <!-- <br> -->
+
 
 
 
     </div>
+    <!-- container  -->
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text" href="#" id="footer_link">ISAC.org</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
 
 

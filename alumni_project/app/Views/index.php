@@ -75,6 +75,7 @@
     #container {
         background-color: lightgray;
         width: 100%;
+        height: 900px;
 
     }
 
@@ -154,7 +155,8 @@
 
                     </ul>
                     <a class="nav-link" href="/profile"><?php echo $session->get('FName_eng'); ?></a>
-                    <a href="<?php echo base_url('Login/logout'); ?>"><img src="/img/logout.png" alt="" style="width: 30px; height:27px;"></a>
+                    <a href="<?php echo base_url('Login/logout'); ?>"><img src="/img/logout.png" alt=""
+                            style="width: 30px; height:27px;"></a>
                 </div>
             </div>
         </nav>
@@ -201,17 +203,17 @@
                 </div> -->
 
         </div>
-        <br>
-        <footer class="bg-dark text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2020 Copyright:
-                <a class="text" href="#" id="footer_link">ISAC.org</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </div>
+        <!-- <br> -->
 
+    </div>
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text" href="#" id="footer_link">ISAC.org</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
 </body>
 

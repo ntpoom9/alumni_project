@@ -237,6 +237,9 @@
 
             </ul>
             <a class="nav-link" href="/profile"><?php echo $session->get('FName_eng'); ?></a>
+            <a href="<?php echo base_url('Login/logout'); ?>"><img src="/img/logout.png" alt=""
+                    style="width: 30px; height:27px;"></a>
+
         </div>
     </div>
 </nav>
