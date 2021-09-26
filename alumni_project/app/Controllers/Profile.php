@@ -21,6 +21,44 @@ class Profile extends Controller{
             $data['users'] = $UserModel->orderBy('stu_id', 'DESC')->findAll();
     
     
-            return view('edit', $data);
+            return view('edit_profile', $data);
+        }
+
+        function update()
+        {
+            // helper(['form', 'url']);
+            
+            // $error = $this->validate([
+            //     'name' 	=> 'required|min_length[3]',
+            //     'email' => 'required|valid_email',
+            //     'gender'=> 'required'
+            // ]);
+    
+            // $crudModel = new CrudModel();
+    
+            // $id = $this->request->getVar('id');
+    
+            // if(!$error)
+            // {
+            //     $data['user_data'] = $crudModel->where('id', $id)->first();
+            //     $data['error'] = $this->validator;
+            //     echo view('edit_data', $data);
+            // } 
+            // else 
+            // {
+            //     $data = [
+            //         'name' => $this->request->getVar('name'),
+            //         'email'  => $this->request->getVar('email'),
+            //         'gender'  => $this->request->getVar('gender'),
+            //     ];
+    
+            //     $crudModel->update($id, $data);
+    
+            //     $session = \Config\Services::session();
+    
+            //     $session->setFlashdata('success', 'User Data Updated');
+    
+            //     return $this->response->redirect(site_url('/crud'));
+            // }
         }
 }
