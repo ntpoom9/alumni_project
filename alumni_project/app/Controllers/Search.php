@@ -23,10 +23,5 @@ use App\Models\UserModel;
             return view('search_page', $data);
         }
 
-        public function skeyword(){
-            $UserModel = new UserModel();
-            $key =$this->input->post('title');
-            $data['stu_data'] = $UserModel->search_M($key);
-            $this->load->view('search_page_index', $data);
-        }
+        
 }
