@@ -1,3 +1,8 @@
+<?php $session = session();
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);?>
 <!doctype html>
 <html lang="en">
 
@@ -18,7 +23,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -117,9 +121,10 @@
         padding: 5px;
         border-color: lightgrey;
         border-radius: 1px;
+
     }
 
-    #input_label1.col {}
+
 
     #input_label2 {
         padding: 0px;
@@ -201,7 +206,6 @@
         width: 2rem;
     } */
 
-
     footer,
     #footer_link {
         color: #FFFFFF;
@@ -212,11 +216,10 @@
 </head>
 
 <!-- <div class="container"> -->
-
 <!-- Header -->
 <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/home">ISAC</a>
+        <a class="navbar-brand" href="/index">ISAC</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
@@ -232,12 +235,15 @@
                         <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
                     </ul>
                 </li>
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
-                </li> -->
+                </li>
 
             </ul>
-            <a class="nav-link" href="/home">USER</a>
+            <a class="nav-link" href="/profile"><?php echo $session->get('FName_eng'); ?></a>
+            <a href="<?php echo base_url('Login/logout'); ?>"><img src="/img/logout.png" alt=""
+                    style="width: 30px; height:27px;"></a>
+
         </div>
     </div>
 </nav>
@@ -261,17 +267,16 @@
                         <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
                             <td id="table_title">
                                 <div class="table_title">ค้นหาจาก... &nbsp;<i class="fas fa-search"
-                                        id="toggle-icon"></i>
-                                </div>
+                                        id="toggle-icon"></i></div>
                             </td>
                         </tr>
                     </thead>
                     <tbody>
 
                         <td colspan="6" class="hiddenRow">
-                            <div class="accordian-body collapse in" id="demo1" aria-expanded="true" style="">
+                            <div class="accordian-body collapse in" id="demo1" aria-expanded="true">
 
-                                <form action="/Seachdata/seach" method="post">
+                                <form action="/seach_page_index/skeyword" method="post">
                                     <div class="row" id="row_seachoption">
                                         <div class="col-3" id="label1">ชื่อ</div>
                                         <div class="col" id="input_label1">

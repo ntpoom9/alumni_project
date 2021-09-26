@@ -32,17 +32,18 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/', 'Seachdata::seach');
+ $routes->get('/', 'Search::search');
 
 
 // add these CRUD Routes
-$routes->get('seach_page', 'StudentCrud::index');
-$routes->get('seach_page_index', 'StudentCrud_index::index');
-$routes->get('addname', 'StudentCrud::create');
-$routes->post('submit-form', 'StudentCrud::store');
-$routes->get('editnames/(:num)', 'StudentCrud::singleUser/$1');
-$routes->post('update', 'StudentCrud::update');
-$routes->get('delete/(:num)', 'StudentCrud::delete/$1');
+// $routes->get('seach_page', 'StudentCrud::index');
+ $routes->get('search_page_index', 'Search::search');
+ $routes->get('search_page', 'Search::searchHome');
+// $routes->get('addname', 'StudentCrud::create');
+// $routes->post('submit-form', 'StudentCrud::store');
+// $routes->get('editnames/(:num)', 'StudentCrud::singleUser/$1');
+// $routes->post('update', 'StudentCrud::update');
+// $routes->get('delete/(:num)', 'StudentCrud::delete/$1');
 
 /*
  * --------------------------------------------------------------------

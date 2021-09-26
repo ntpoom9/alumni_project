@@ -33,5 +33,12 @@ class UserModel extends Model {
         'phone_number'	
         ];
 
+        public function search_M($key){
+            $this->db->like('title',$key);
+            $query = $this->db->get('stu_data');
+            return $query->result();
+        }
+
+      
        
 }

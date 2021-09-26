@@ -178,16 +178,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/seach_page" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="/search_page" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/seach_page">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/search_page">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/search_page">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/search_page">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/search_page">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/search_page">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
                         <!-- <li class="nav-item">
