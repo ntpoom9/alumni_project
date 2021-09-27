@@ -224,11 +224,11 @@
                         ค้นหาข้อมูลศิษย์เก่า
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/seach_page_index">จากชื่อ</a></li>
-                        <li><a class="dropdown-item" href="/seach_page_index">จากปีแรกเข้า</a></li>
-                        <li><a class="dropdown-item" href="/seach_page_index">จากจังหวัด</a></li>
-                        <li><a class="dropdown-item" href="/seach_page_index">จากหมู่เรียน</a></li>
-                        <li><a class="dropdown-item" href="/seach_page_index">จากรหัสนักศึกษา</a></li>
+                        <li><a class="dropdown-item" href="/search_page_index">จากชื่อ</a></li>
+                        <li><a class="dropdown-item" href="/search_page_index">จากปีแรกเข้า</a></li>
+                        <li><a class="dropdown-item" href="/search_page_index">จากจังหวัด</a></li>
+                        <li><a class="dropdown-item" href="/search_page_index">จากหมู่เรียน</a></li>
+                        <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
