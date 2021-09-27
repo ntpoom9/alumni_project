@@ -39,10 +39,14 @@ $routes->get('/', 'Home::index');
 // $routes->get('seach_page', 'StudentCrud::index');
  $routes->get('search_page_index', 'Search::search');
  $routes->get('search_page', 'Search::searchHome');
+//  $routes->get('edit_profile', 'Profile::show_edit');
+
+ $routes->get('edit_profile/(:num)', 'Profile::show_edit/$1');
+ $routes->post('update', 'Profile::update');
 // $routes->get('addname', 'StudentCrud::create');
 // $routes->post('submit-form', 'StudentCrud::store');
 // $routes->get('editnames/(:num)', 'StudentCrud::singleUser/$1');
-// $routes->post('update', 'StudentCrud::update');
+
 // $routes->get('delete/(:num)', 'StudentCrud::delete/$1');
 
 /*

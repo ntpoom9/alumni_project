@@ -51,6 +51,7 @@ class Register extends Controller
         if ($this->validate($rules)) {
             $model = new UserModel();
             $data = [
+                'user_id' => "",
                 'stu_id' => $this->request->getVar('stu_id'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
                 'name_prefix' => $this->request->getVar('name_prefix'),
@@ -75,7 +76,7 @@ class Register extends Controller
                 'District' => $this->request->getVar('District'),
                 'Province' => $this->request->getVar('Province'),
                 'Zipcode' => $this->request->getVar('Zipcode'),
-                'phone_number' => $this->request->getVar('phone_number'),
+                'phone_number' => $this->request->getVar('phone_number')
             ];
             
             $model->save($data);

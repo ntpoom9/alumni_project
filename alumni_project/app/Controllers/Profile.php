@@ -13,52 +13,40 @@ class Profile extends Controller{
         // $data['users'] = $UserModel->fetch_data();
         return view('profile', $data);
     }
-    public function edit($stu_id=null) {
+    public function show_edit($stu_id=null) {
         //    echo $stu_id;
+
+            $session = session();
             $UserModel = new UserModel();
-    
-            // // โชว์ All จาก id 
-            $data['users'] = $UserModel->orderBy('stu_id', 'DESC')->findAll();
+            // $data['users'] = $UserModel->orderBy('stu_id', $stu_id)->findAll();
+            $data['users'] = $UserModel->where('stu_id', $stu_id)->first();
     
     
             return view('edit_profile', $data);
         }
 
-        function update()
+        public function update()
         {
-            // helper(['form', 'url']);
+            $session = session();
+            $id = $session->get('id');
+            $UserModel = new UserModel();
+            $data = [
+                // 'd_m_y_birth' => $this->request->getVar('d_m_y_birth'),
+                'province_birth' => $this->request->getVar('province_birth'),
+                'nationality' => $this->request->getVar('nationality'),
+                'religion' => $this->request->getVar('religion'),
+                'blood_type' => $this->request->getVar('blood_type'),
+                'Address' => $this->request->getVar('Address'),
+                'SubDistrict' => $this->request->getVar('SubDistrict'),
+                'District' => $this->request->getVar('District'),
+                'Province' => $this->request->getVar('Province'),
+                'Zipcode' => $this->request->getVar('Zipcode'),
+                'phone_number' => $this->request->getVar('phone_number'),
+            ];
+            $UserModel->update($id,$data);
+            $session->set($data);
+            return redirect()->to('profile');
             
-            // $error = $this->validate([
-            //     'name' 	=> 'required|min_length[3]',
-            //     'email' => 'required|valid_email',
-            //     'gender'=> 'required'
-            // ]);
-    
-            // $crudModel = new CrudModel();
-    
-            // $id = $this->request->getVar('id');
-    
-            // if(!$error)
-            // {
-            //     $data['user_data'] = $crudModel->where('id', $id)->first();
-            //     $data['error'] = $this->validator;
-            //     echo view('edit_data', $data);
-            // } 
-            // else 
-            // {
-            //     $data = [
-            //         'name' => $this->request->getVar('name'),
-            //         'email'  => $this->request->getVar('email'),
-            //         'gender'  => $this->request->getVar('gender'),
-            //     ];
-    
-            //     $crudModel->update($id, $data);
-    
-            //     $session = \Config\Services::session();
-    
-            //     $session->setFlashdata('success', 'User Data Updated');
-    
-            //     return $this->response->redirect(site_url('/crud'));
-            // }
+        
         }
 }

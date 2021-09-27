@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class UserModel extends Model {
     protected $table = 'stu_data';
-    // protected $primaryKey = 'stu_id';
+    protected $primaryKey = 'user_id';
     protected $allowedFields = [
         'stu_id',
         'password',
@@ -34,6 +34,5 @@ class UserModel extends Model {
         ];
 
        
-      
-       
 }
+?>

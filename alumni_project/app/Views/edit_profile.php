@@ -287,16 +287,16 @@ $session = session(); ?>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/seach_page_index" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/seach_page_index">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/seach_page_index">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/seach_page_index">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/seach_page_index">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/seach_page_index">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -329,7 +329,7 @@ $session = session(); ?>
                 </div>
             </a> -->
 
-            <form action="">
+            <form action="<?= site_url('/update') ?>" method="post">
                 <div id="u1_text">
                     <p><span>แก้ไขประวัติส่วนตัว</span></p>
                 </div>
@@ -459,55 +459,56 @@ $session = session(); ?>
                         </div>
 
                         <div id="u12-1_div" class="u13_div" style="margin-top:38px;">
-                            <p><span>
-                                    <?php 
+                            <p><span><?php 
                         $date = $session->get('d_m_y_birth');
                         $dm = 'd/m/';
                         $year=(date("Y")+543);
                         echo date($dm.$year,strtotime($date));
-                        ?>
-                                </span></p>
+                        ?> </span></p>
                         </div>
 
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" value="<?php echo  $session->get('province_birth'); ?>"></p>
+                            <p><input type="text" name="province_birth"
+                                    value="<?php echo  $session->get('province_birth'); ?>" /></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('nationality'); ?></span></p>
+                            <p><input type="text" name="nationality"
+                                    value="<?php echo  $session->get('nationality'); ?>" /></p>
 
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('religion'); ?></span></p>
-
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" value="<?php echo  $session->get('blood_type'); ?>"></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" value="<?php echo  $session->get('Address'); ?>"></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" value="<?php echo  $session->get('SubDistrict'); ?>"></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" value="<?php echo  $session->get('District'); ?>"></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" value="<?php echo  $session->get('Province'); ?>"></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" value="<?php echo  $session->get('Zipcode'); ?>"></p>
-                        </div>
-
-
-
-                        <!-- <div id="u12-1_div" class="address_div_data">
-                            <p><span><?php echo  "บ้านเลขที่ ".$session->get('Address')." ตำบล ". $session->get('SubDistrict')."<br>อำเภอ ".$session->get('District')." จังหวัด ".$session->get('Province')."<br>รหัสไปรษณีย์ ".$session->get('Zipcode'); ?></span>
+                            <p><input type="text" name="religion" value="<?php echo  $session->get('religion'); ?>" />
                             </p>
-                        </div> -->
+
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" name="blood_type"
+                                    value="<?php echo  $session->get('blood_type'); ?>" /></p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" name="Address" value="<?php echo  $session->get('Address'); ?>" /></p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" name="SubDistrict"
+                                    value="<?php echo  $session->get('SubDistrict'); ?>" /></p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" name="District" value="<?php echo  $session->get('District'); ?>" />
+                            </p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" name="Province" value="<?php echo  $session->get('Province'); ?>" />
+                            </p>
+                        </div>
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input type="text" name="Zipcode" value="<?php echo  $session->get('Zipcode'); ?>" /></p>
+                        </div>
+
 
                         <div id="u12-1_div" class="u13_div">
-                            <p>+66 <input type="text" value="<?php echo  $session->get('phone_number'); ?>"></p>
+                            <p><input type="text" name="phone_number"
+                                    value="<?php echo  $session->get('phone_number'); ?>" /></p>
+                            </p>
                         </div>
 
 
@@ -521,6 +522,7 @@ $session = session(); ?>
 
                 <div id="btn">
                     <center>
+                        <input type="hidden" name="stu_id" id="stu_id" value="<?php echo $users['stu_id']; ?>">
                         <button type="submit" id="submit" class="btn btn-warning">อัพเดทข้อมูล</button>
                         <a href="/profile" class="btn btn-danger">ยกเลิก</a>
 

@@ -26,6 +26,7 @@ class Login extends Controller
             $verify_password = password_verify($password, $pass);
             if ($verify_password) {
                 $ses_data = [
+                    'user_id' => $data['user_id'],
                     'stu_id' => $data['stu_id'],
                     'name_prefix' => $data['name_prefix'],
                     'FName' => $data['FName'],
