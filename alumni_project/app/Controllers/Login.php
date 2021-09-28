@@ -14,6 +14,20 @@ class Login extends Controller
         echo view('login');
     }
 
+    // public function check_login(){
+    //     $model = new UserModel();
+    //     $stu_id = $this->request->getVar('stu_id');
+    //     $password = $this->request->getVar('password');
+
+    //     $check = this->model->check_login($stu_id,$password);
+    //     if (($check['stu_id']==$stu_id)&&($check['password']==$password)){
+    //         session()->set('stu_id',$check['$stu_id']);
+    //         session()->set('password',$check['$password']);
+    //     } else{
+    //         $session->setFlashdata('msg_login', 'รหัสนัหศึกษาและรหัสผ่านไม่ถูกต้อง!');
+    //     }
+    // }
+
     public function auth()
     {
         $session = session();
@@ -55,7 +69,8 @@ class Login extends Controller
                 ];
                 $session->set($ses_data);
                 return redirect()->to('/index');
-            } else {
+            } 
+            else {
                 $session->setFlashdata('msg', 'รหัสผ่านไม่ถูก');
                 return redirect()->to('/login');
             }

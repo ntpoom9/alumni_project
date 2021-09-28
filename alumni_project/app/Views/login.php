@@ -215,6 +215,15 @@
                 </div>
             </a>
 
+            <!-- <//?php if(empty(session()->getFlashdata('warning'))){?>
+
+            <div class="alert alert-warning">
+
+                <//?php echo session()->getFlashdata('warning');?>
+            </div>
+            <//?php }?>
+            <//?php form_open(login/check_login)?> -->
+
             <div id="u1">
                 <p id="u1_text"><span>เข้าสู่ระบบ</span></p>
                 <p><span>ไม่มีบัญชี?<a href="/register">ลงทะเบียน</a></span></p>
@@ -246,7 +255,7 @@
                             href="/register">ลืมรหัสผ่านหรือไม่?</a></label>
                 </div>
 
-                <div id="btn">
+                <div id="btn" onclick="submit()">
                     <button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
                 </div>
 
@@ -280,6 +289,64 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+    function submit() {
+        var stu_id = $("#stu_id").val();
+        var password = $("#inputforpassword").val();
+
+        if (stu_id == '') {
+            Swal.fire({
+                title: "รหัสนักศึกษาต้องไม่เป็นค่าว่าง!",
+                text: "กรุณาเช็คข้อมูลอีกครั้ง!!",
+                icon: "warning",
+                button: "OK",
+                timer: 3000
+            });
+            // alert("รหัสนักศึกษาต้องไม่เป็นค่าว่าง!");
+        } else if (password == '') {
+            Swal.fire({
+                title: "รหัสผ่านต้องไม่เป็นค่าว่าง!",
+                text: "กรุณาเช็คข้อมูลอีกครั้ง!!",
+                icon: "warning",
+                button: "OK",
+                timer: 3000
+            });
+            // alert("รหัสผ่านต้องไม่เป็นค่าว่าง!");
+        }
+
+
+        // if (stu_id == '' || password == '') {
+        //     Swal.fire({
+        //         title: "รหัสนัหศึกษาและรหัสผ่านต้องไม่เป็นช่องว่าง!",
+        //         text: "กรุณาเช็คข้อมูลอีกครั้ง!!",
+        //         icon: "warning",
+        //         button: "OK",
+        //     });
+
+        //     // swal({
+        //     //     title: "กรอกข้ออมูลไม่ครบ!",
+        //     //     text: "กรุณาเช็คข้อมูลอีกครั้ง!!",
+        //     //     icon: "warning",
+        //     //     button: "OK",
+        //     // });
+
+        // } else {
+
+        //     Swal.fire({
+
+        //         icon: 'success',
+        //         title: 'เข้าสู่ระบบสำเร็จแล้ว!!',
+        //         showConfirmButton: false,
+        //         timer: 1000000
+        //     });
+        // }
+    }
+    </script>
+
 </body>
 
 </html>

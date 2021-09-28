@@ -572,8 +572,8 @@
             SubDistrict == '' || District == '' || Province == '' ||
             Zipcode == '' || phone_number == '') {
             Swal.fire({
-                title: "กรอกข้ออมูลไม่ครบ!",
-                text: "กรุณาเช็คข้อมูลอีกครั้ง!!",
+                title: "กรอกข้อมูลไม่ครบ!",
+                text: "กรุณาเช็คข้อมูลอีกครั้ง!",
                 icon: "warning",
                 button: "OK",
             });
