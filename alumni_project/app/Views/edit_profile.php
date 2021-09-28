@@ -468,45 +468,50 @@ $session = session(); ?>
                         </div>
 
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="province_birth"
+                            <p><input id="province_birth" type="text" name="province_birth"
                                     value="<?php echo  $session->get('province_birth'); ?>" /></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="nationality"
+                            <p><input id="nationality" type="text" name="nationality"
                                     value="<?php echo  $session->get('nationality'); ?>" /></p>
 
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="religion" value="<?php echo  $session->get('religion'); ?>" />
+                            <p><input id="religion" type="text" name="religion"
+                                    value="<?php echo  $session->get('religion'); ?>" />
                             </p>
 
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="blood_type"
+                            <p><input id="blood_type" type="text" name="blood_type"
                                     value="<?php echo  $session->get('blood_type'); ?>" /></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="Address" value="<?php echo  $session->get('Address'); ?>" /></p>
+                            <p><input id="Address" type="text" name="Address"
+                                    value="<?php echo  $session->get('Address'); ?>" /></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="SubDistrict"
+                            <p><input id="SubDistrict" type="text" name="SubDistrict"
                                     value="<?php echo  $session->get('SubDistrict'); ?>" /></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="District" value="<?php echo  $session->get('District'); ?>" />
+                            <p><input id="District" type="text" name="District"
+                                    value="<?php echo  $session->get('District'); ?>" />
                             </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="Province" value="<?php echo  $session->get('Province'); ?>" />
+                            <p><input id="Province" type="text" name="Province"
+                                    value="<?php echo  $session->get('Province'); ?>" />
                             </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="Zipcode" value="<?php echo  $session->get('Zipcode'); ?>" /></p>
+                            <p><input id="Zipcode" type="text" name="Zipcode"
+                                    value="<?php echo  $session->get('Zipcode'); ?>" /></p>
                         </div>
 
 
                         <div id="u12-1_div" class="u13_div">
-                            <p><input type="text" name="phone_number"
+                            <p><input id="phone_number" type="text" name="phone_number"
                                     value="<?php echo  $session->get('phone_number'); ?>" /></p>
                             </p>
                         </div>
@@ -523,8 +528,9 @@ $session = session(); ?>
                 <div id="btn">
                     <center>
                         <input type="hidden" name="stu_id" id="stu_id" value="<?php echo $users['stu_id']; ?>">
-                        <button type="submit" id="submit" class="btn btn-warning">อัพเดทข้อมูล</button>
-                        <a href="/profile" class="btn btn-danger">ยกเลิก</a>
+                        <button type="submit" id="submit" class="btn btn-warning"
+                            onclick="submit()">อัพเดทข้อมูล</button>
+                        <a href=" /profile" class="btn btn-danger">ยกเลิก</a>
 
                     </center>
                 </div>
@@ -542,6 +548,62 @@ $session = session(); ?>
         </div>
         <!-- Copyright -->
     </footer>
+
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    function submit() {
+        // var stu_id = $("#stu_id").val();
+        // var password = $("#password").val();
+        // var name_prefix = $("#name_prefix").val();
+        // var FName = $("#FName").val();
+        // var LName = $("#LName").val();
+        // var FName_eng = $("#FName_eng").val();
+        // var LName_eng = $("#LName_eng").val();
+        // var id_cardnumber = $("#id_cardnumber").val();
+        // var sex = $("#sex").val();
+        // var faculty = $("#faculty").val();
+        // var major = $("#major").val();
+        // var edu_level = $("#edu_level").val();
+        // var first_year = $("#first_year").val();
+        // var d_m_y_birth = $("#d_m_y_birth").val();
+        var province_birth = $("#province_birth").val();
+        var nationality = $("#nationality").val();
+        var religion = $("#religion").val();
+        var blood_type = $("#blood_type").val();
+        var Address = $("#Address").val();
+        var SubDistrict = $("#SubDistrict").val();
+        var District = $("#District").val();
+        var Province = $("#Province").val();
+        var Zipcode = $("#Zipcode").val();
+        var phone_number = $("#phone_number").val();
+
+
+        if (province_birth == '' ||
+            nationality == '' || religion == '' || blood_type == '' || Address == '' ||
+            SubDistrict == '' || District == '' || Province == '' ||
+            Zipcode == '' || phone_number == '') {
+            Swal.fire({
+                title: "กรอกข้อมูลไม่ครบ!",
+                text: "กรุณาเช็คข้อมูลอีกครั้ง!",
+                icon: "warning",
+                button: "OK",
+            });
+
+
+        } else {
+            Swal.fire({
+                icon: 'success',
+                title: 'ลงทะเบียนสำเร็จแล้ว!!',
+                showConfirmButton: false,
+                timer: 1000000
+            });
+
+
+        }
+
+    }
+    </script> -->
 </body>
 
 </html>
