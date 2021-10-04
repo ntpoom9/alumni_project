@@ -228,7 +228,7 @@
                                 <li><a class="dropdown-item" href="/search_page">จากปีแรกเข้า</a></li>
                                 <li><a class="dropdown-item" href="/search_page">จากจังหวัด</a></li>
                                 <li><a class="dropdown-item" href="/search_page">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/search_page">จากรหัสนักศึกษ</a></li>
+                                <li><a class="dropdown-item" href="/search_page">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
                         <!-- <li class="nav-item">
