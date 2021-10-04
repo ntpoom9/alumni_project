@@ -32,22 +32,22 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
- $routes->get('/', 'Search::search');
 
+// Login
+$routes->get('login','Login::index');
+$routes->get('/','Login::logout');
+// Register
+$routes->get('register','Register::index');
 
-// add these CRUD Routes
-// $routes->get('seach_page', 'StudentCrud::index');
+// page_search
  $routes->get('search_page_index', 'Search::search');
  $routes->get('search_page', 'Search::searchHome');
-//  $routes->get('edit_profile', 'Profile::show_edit');
 
+// page_profile
+$routes->get('profile', 'Profile::index');
+// page_edit_profile
  $routes->get('edit_profile/(:num)', 'Profile::show_edit/$1');
  $routes->post('update', 'Profile::update');
-// $routes->get('addname', 'StudentCrud::create');
-// $routes->post('submit-form', 'StudentCrud::store');
-// $routes->get('editnames/(:num)', 'StudentCrud::singleUser/$1');
-
-// $routes->get('delete/(:num)', 'StudentCrud::delete/$1');
 
 /*
  * --------------------------------------------------------------------
