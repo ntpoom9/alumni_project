@@ -356,7 +356,7 @@
                         <select class="select" id="name_prefix" name="name_prefix">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
                             <option value="นาย">นาย</option>
-                            <option value="น.ส.">น.ส.</option>
+                            <option value="นางสาว">นางสาว</option>
                             <option value="นาง">นาง</option>
                         </select>
                     </div>
@@ -440,7 +440,7 @@
                             value="<?= set_value('religion'); ?>">
                     </div>
                     <div class="form-group">
-                        <label for="name" style="width: 61px;">กลุ่มเลือด</label>
+                        <label for="name" style="width: 61px;">กรุ๊ปเลือด</label>
                         <select class="select" name="blood_type" id="blood_type">//aria-label="Default select example">
                             <option selected>&nbsp;&nbsp;&nbsp;</option>
                             <option value="A">A</option>
