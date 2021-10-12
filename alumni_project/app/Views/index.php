@@ -161,10 +161,6 @@
                             </ul>
                         </li>
 
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
-                        </li> -->
-
 
                     </ul>
 
@@ -184,12 +180,10 @@
                         </ul>
                     </div>
 
-
-
-
                 </div>
             </div>
         </nav>
+
         <br>
         <div class="content">
             <div class="container">
