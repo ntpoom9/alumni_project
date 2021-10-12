@@ -231,9 +231,7 @@
                                 <li><a class="dropdown-item" href="/search_page">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
-                        </li> -->
+
 
                     </ul>
                     <a class="nav-link" href="/login">เข้าสู่ระบบ</a>

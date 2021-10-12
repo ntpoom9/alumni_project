@@ -65,6 +65,8 @@
         padding-left: 20px;
     }
 
+    /* navbar  */
+
     #u0_div {
 
         margin-bottom: 10px;
@@ -77,13 +79,6 @@
         box-shadow: 5px 5px 5px rgb(0 0 0 / 35%);
     }
 
-    /* .btn-group {
-        padding-right: 1rem;
-    } */
-
-    /* #logout_btn {
-        background-color: #000000;
-    } */
 
     /* navbar  */
 

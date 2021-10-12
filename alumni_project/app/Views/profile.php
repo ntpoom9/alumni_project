@@ -300,11 +300,8 @@ $session = session(); ?>
                                 <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
-                        </li> -->
-
                     </ul>
+
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
                         <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
