@@ -195,7 +195,8 @@
                         </li> -->
 
                     </ul>
-                    <!-- <a class="nav-link" href="">USER</a> -->
+                    <a class="nav-link" href="/register">ลงทะเบียน</a>
+                    <a class="nav-link" href="/login">เข้าสู่ระบบ</a>
                 </div>
             </div>
         </nav>
@@ -227,8 +228,8 @@
 
 
 
-
-                </div>
+                    <!-- ปุ่มตรงกลาง -->
+                    <!-- </div>
                 <a href="/register">
                     <div style="left: 700px; top:340px; cursor: pointer;" id="u3" class="ax_default button">
                         <div id="u3_div" class="" tabindex="0">
@@ -251,48 +252,48 @@
                         </div>
 
                     </div>
-                </a>
+                </a> -->
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
 
 
-            <!-- <div class="content">
+
+
+                <!-- <div class="content">
             
             </div> -->
 
 
 
 
+            </div>
         </div>
-    </div>
 
-    <footer class="bg-dark text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3">
-            © 2020 Copyright:
-            <a class="text" href="#" id="footer_link">ISAC.org</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2020 Copyright:
+                <a class="text" href="#" id="footer_link">ISAC.org</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

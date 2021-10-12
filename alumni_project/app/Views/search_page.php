@@ -237,7 +237,9 @@
                 </li> -->
 
             </ul>
-            <a class="nav-link" href="/login">USER</a>
+
+            <a class="nav-link" href="/register">ลงทะเบียน</a>
+            <a class="nav-link" href="/login">เข้าสู่ระบบ</a>
         </div>
     </div>
 </nav>
