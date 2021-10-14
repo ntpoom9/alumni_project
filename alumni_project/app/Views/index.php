@@ -17,6 +17,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <!-- CSS -->
     <style>
     /* font/header/footer  */
@@ -26,6 +30,7 @@
         font-family: 'Kanit', sans-serif;
     }
 
+    /* navbar  */
     .navbar-brand {
         color: #FFFFFF;
         font-size: 30px;
@@ -60,6 +65,8 @@
         padding-left: 20px;
     }
 
+    /* navbar  */
+
     #u0_div {
 
         margin-bottom: 10px;
@@ -71,6 +78,9 @@
         border-radius: 10px;
         box-shadow: 5px 5px 5px rgb(0 0 0 / 35%);
     }
+
+
+    /* navbar  */
 
     #container {
         background-color: lightgray;
@@ -134,6 +144,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
@@ -149,17 +160,30 @@
                                 <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
-                        </li>
+
 
                     </ul>
-                    <a class="nav-link" href="/profile"><?php echo $session->get('FName_eng'); ?></a>
-                    <a href="<?php echo base_url('Login/logout'); ?>"><img src="/img/logout.png" alt=""
-                            style="width: 30px; height:27px;"></a>
+
+                    <!-- ปุ่มผู้ใช้ และ logout -->
+                    <div class="btn-group">
+                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
+
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
+                            aria-labelledby="navbarDropdown">
+                            <li> <a class="dropdown-item" href="/profile">
+                                    <i class="far fa-address-card"></i>&nbsp;&nbsp;ข้อมูลส่วนตัว</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>" id="logout_btn">
+                                    <i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;ออกจากระบบ</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </nav>
+
         <br>
         <div class="content">
             <div class="container">

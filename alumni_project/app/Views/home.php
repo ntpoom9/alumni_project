@@ -19,7 +19,7 @@
     body {
         font-family: 'Kanit', sans-serif;
     }
-    }
+
 
     #container {
         /* background-color: lightgray; */
@@ -149,32 +149,14 @@
     <div id="container">
 
         <!-- Tag Header -->
-        <!-- <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
                 <a class="navbar-brand" id="text0" href="/home">ISAC</a>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/seach_page" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        ค้นหาข้อมูลศิษย์เก่า
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/seach_page">จากชื่อ</a></li>
-                        <li><a class="dropdown-item" href="/seach_page">จากปีแรกเข้า</a></li>
-                        <li><a class="dropdown-item" href="/seach_page">จากจังหวัด</a></li>
-                        <li><a class="dropdown-item" href="/seach_page">จากหมู่เรียน</a></li>
-                        <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
-                    </ul>
-                </li>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
-        </nav> -->
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/home">ISAC</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
@@ -190,68 +172,71 @@
                                 <li><a class="dropdown-item" href="/search_page">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
-                        </li> -->
-
                     </ul>
-                    <!-- <a class="nav-link" href="">USER</a> -->
+
+                    <a class="nav-link" href="/register">ลงทะเบียน</a>
+                    <a class="nav-link" href="/login">เข้าสู่ระบบ</a>
                 </div>
             </div>
-        </nav>
+    </div>
+    </nav>
 
-        <div>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+
+
+    <div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+
+                <div class="carousel-item active">
+                    <img src="/img/home.jpg" class="d-block w-100" alt="home">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/home2.jpg" class="d-block w-100" alt="home2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/home3.jpg" class="d-block w-100" alt="home3">
                 </div>
 
-                <div class="carousel-inner">
 
 
-                    <div class="carousel-item active">
-                        <img src="/img/home.jpg" class="d-block w-100" alt="home">
+                <!-- ปุ่มตรงกลาง  -->
+                <!-- </div>
+            <a href="/register">
+                <div style="left: 700px; top:340px; cursor: pointer;" id="u3" class="ax_default button">
+                    <div id="u3_div" class="" tabindex="0">
+
+                        <div id="u3_text" class="text " style="padding-left: 44px;">
+                            <p><span>ลงทะเบียน</span></p>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/home2.jpg" class="d-block w-100" alt="home2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/home3.jpg" class="d-block w-100" alt="home3">
-                    </div>
-
-
-
 
                 </div>
-                <a href="/register">
-                    <div style="left: 700px; top:340px; cursor: pointer;" id="u3" class="ax_default button">
-                        <div id="u3_div" class="" tabindex="0">
+            </a>
 
-                            <div id="u3_text" class="text " style="padding-left: 44px;">
-                                <p><span>ลงทะเบียน</span></p>
-                            </div>
+            <a href="/login">
+                <div style="left: 1000px; top:340px; cursor: pointer;" id="u3" class="ax_default button">
+                    <div id="u3_div" class="" tabindex="0">
+
+                        <div id="u3_text" class="text " style="padding-left: 36px;">
+                            <p><span>ลงชื่อเข้าใช้</span></p>
                         </div>
-
                     </div>
-                </a>
 
-                <a href="/login">
-                    <div style="left: 1000px; top:340px; cursor: pointer;" id="u3" class="ax_default button">
-                        <div id="u3_div" class="" tabindex="0">
-
-                            <div id="u3_text" class="text " style="padding-left: 36px;">
-                                <p><span>ลงชื่อเข้าใช้</span></p>
-                            </div>
-                        </div>
-
-                    </div>
-                </a>
+                </div>
+            </a> -->
+                <!-- ปุ่มตรงกลาง  -->
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
