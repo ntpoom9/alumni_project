@@ -25,6 +25,8 @@
 
 
     <style>
+    @import 'https://fonts.googleapis.com/css?family=Kanit';
+
     body {
         font-family: 'Kanit', sans-serif;
     }

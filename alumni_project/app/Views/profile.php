@@ -358,10 +358,7 @@ $session = session(); ?>
                             <div id="u18_div" class=""></div>
                             <div id="u16" class="ax_default box_3">
 
-                                <?php $id = $session->get('user_id');
-                                      $stu_id = $session->get('stu_id');
-                                
-                                ?>
+                                <?php $stu_id = $session->get('stu_id');?>
                                 <a href="<?php echo base_url('edit_profile/'.$stu_id);?>" id="text">
                                     <!-- <a href="/show_edit" id="text"> -->
                                     <div id="u16_div">

@@ -343,8 +343,9 @@ $session = session(); ?>
                     </div>
                 </div>
             </a> -->
-
-            <form action="<?= site_url('/update') ?>" method="post">
+            <?php $stu_id = $session->get('stu_id');?>
+            <form action="<?= base_url('update/'. $stu_id) ?>" method="POST">
+                <input type="hidden" name="_method" value="PUT" />
                 <div id="u1_text">
                     <p><span>แก้ไขประวัติส่วนตัว</span></p>
                 </div>
@@ -442,7 +443,7 @@ $session = session(); ?>
 
                     <div class="form-group" style="padding-top: 35px;">
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('stu_id'); ?></span></p>
+                            <p><span><?php echo $stu_id; ?></span></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('id_cardnumber'); ?></span></p>
@@ -542,7 +543,7 @@ $session = session(); ?>
 
                 <div id="btn">
                     <center>
-                        <input type="hidden" name="stu_id" id="stu_id" value="<?php echo $users['stu_id']; ?>">
+                        <input type="hidden" name="stu_id" value="<?php echo $users['user_id']; ?>">
                         <button type="submit" id="submit" class="btn btn-warning"
                             onclick="submit()">อัพเดทข้อมูล</button>
                         <a href=" /profile" class="btn btn-danger">ยกเลิก</a>

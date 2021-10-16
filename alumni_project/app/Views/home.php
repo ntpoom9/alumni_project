@@ -16,6 +16,8 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
     <style>
+    @import 'https://fonts.googleapis.com/css?family=Kanit';
+
     body {
         font-family: 'Kanit', sans-serif;
     }
@@ -58,6 +60,9 @@
         padding-left: 20px;
     }
 
+    .carousel-itemimg {
+        /* height: 100px; */
+    }
 
     #u3 {
         position: absolute;
@@ -148,7 +153,7 @@
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/home">ISAC TKDO</a>
+                <a class="navbar-brand" id="text0" href="/home">ISAC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

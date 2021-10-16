@@ -23,6 +23,8 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <style>
+    @import 'https://fonts.googleapis.com/css?family=Kanit';
+
     body {
         font-family: 'Kanit', sans-serif;
     }

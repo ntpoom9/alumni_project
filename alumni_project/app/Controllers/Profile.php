@@ -28,7 +28,7 @@ class Profile extends Controller{
         public function update()
         {
             $session = session();
-            $id = $session->get('id');
+            $id = $this->request->getVar('stu_id');
             $UserModel = new UserModel();
             $data = [
                 // 'd_m_y_birth' => $this->request->getVar('d_m_y_birth'),
@@ -49,4 +49,6 @@ class Profile extends Controller{
             
         
         }
+
+    
 }

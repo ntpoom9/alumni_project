@@ -13,6 +13,7 @@ use App\Models\UserModel;
             // $data['users'] = $UserModel->fetch_data();
             return view('search_page_index', $data);
         }
+        
         public function searchHome() {
            
             $UserModel = new UserModel();

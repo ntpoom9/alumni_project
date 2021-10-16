@@ -47,7 +47,9 @@ $routes->get('register','Register::index');
 $routes->get('profile', 'Profile::index');
 // page_edit_profile
  $routes->get('edit_profile/(:num)', 'Profile::show_edit/$1');
- $routes->post('update', 'Profile::update');
+// udate profile
+ $routes->put('update/(:num)', 'Profile::update/$1');
+ 
 
 /*
  * --------------------------------------------------------------------
