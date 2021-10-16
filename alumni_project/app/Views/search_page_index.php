@@ -356,13 +356,13 @@ ini_set('display_errors', 1);
                         <table class="table table-bordered" id="users-list">
                             <thead>
                                 <tr class="titledata">
-                                    <th>รหัสนักศึกษา</th>
-                                    <th>คำนำหน้า</th>
-                                    <th>&nbsp;&nbsp;ชื่อ&nbsp;&nbsp;</th>
-                                    <th>นามสกุล</th>
-                                    <th>ชื่อภาษอังกฤษ</th>
-                                    <th>นามสกุลอังกฤษ</th>
-                                    <th>คณะ</th>
+                                    <th style="width: 80px;">รหัสนักศึกษา</th>
+                                    <th style="width: 70px;">คำนำหน้า</th>
+                                    <th style="width: 70px;">ชื่อ</th>
+                                    <th style="width: 100px;">นามสกุล</th>
+                                    <!-- <th>ชื่อภาษอังกฤษ</th>
+                                    <th>นามสกุลอังกฤษ</th> -->
+                                    <th style="width: 180px;">คณะ</th>
                                     <th>สาขาวิชา</th>
                                     <th>หมู่เรียน</th>
                                     <th>ปีการศึกษาแรกเข้า</th>
@@ -377,8 +377,8 @@ ini_set('display_errors', 1);
                                     <td><?php echo $row['name_prefix']; ?></td>
                                     <td><?php echo $row['FName']; ?></td>
                                     <td><?php echo $row['LName']; ?></td>
-                                    <td><?php echo $row['FName_eng']; ?></td>
-                                    <td><?php echo $row['LName_eng']; ?></td>
+                                    <!-- <td><?php // echo $row['FName_eng']; ?></td>
+                                    <td><?php // echo $row['LName_eng']; ?></td> -->
                                     <td><?php echo $row['faculty']; ?></td>
                                     <td><?php echo $row['major']; ?></td>
                                     <td><?php echo $row['section']; ?></td>
