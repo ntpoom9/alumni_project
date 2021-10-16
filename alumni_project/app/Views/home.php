@@ -58,9 +58,6 @@
         padding-left: 20px;
     }
 
-    .carousel-itemimg {
-        /* height: 100px; */
-    }
 
     #u3 {
         position: absolute;
@@ -151,7 +148,7 @@
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/home">ISAC</a>
+                <a class="navbar-brand" id="text0" href="/home">ISAC TKDO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
