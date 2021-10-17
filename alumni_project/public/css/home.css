@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Kanit';
+
 body {
     font-family: 'Kanit', sans-serif;
 }
@@ -19,17 +21,25 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #FFFFFF;
+    color: #1E90FF;
 
 }
 
-.nav-link:hover {
+.nav-link {
     color: #FFFFFF;
-    background-color: #1E90FF;
+}
+
+.nav-link:hover {
+    color: #1E90FF;
+    /* background-color: #1E90FF; */
 }
 
 .nav-link:visited {
     color: #FFFFFF;
+}
+
+#navbarDropdown:hover {
+    color: #1E90FF;
 }
 
 .bg-dark {
@@ -40,8 +50,8 @@ body {
     padding-left: 20px;
 }
 
-.carousel-itemimg {
-    /* height: 100px; */
+#text0:hover {
+    color: #1E90FF;
 }
 
 #u3 {
