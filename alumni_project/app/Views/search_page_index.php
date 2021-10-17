@@ -48,19 +48,29 @@ ini_set('display_errors', 1);
 
     }
 
-    a.nav-link {
+    .nav-link {
         color: #FFFFFF;
-        decoration: none;
     }
 
     .nav-link:hover {
-        color: #FFFFFF;
-        background-color: #1E90FF;
-        border-radius: 5px;
+        color: #1E90FF;
+        /* background-color: #1E90FF; */
     }
 
     .nav-link:visited {
         color: #FFFFFF;
+    }
+
+    #navbarDropdown:hover {
+        color: #1E90FF;
+    }
+
+    #text0 {
+        padding-left: 20px;
+    }
+
+    #text0:hover {
+        color: #1E90FF;
     }
 
     #bg-drak {

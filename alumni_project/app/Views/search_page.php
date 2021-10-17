@@ -54,13 +54,21 @@
 
     }
 
-    .nav-link:hover {
+    .nav-link {
         color: #FFFFFF;
-        background-color: #1E90FF;
+    }
+
+    .nav-link:hover {
+        color: #1E90FF;
+        /* background-color: #1E90FF; */
     }
 
     .nav-link:visited {
         color: #FFFFFF;
+    }
+
+    #navbarDropdown:hover {
+        color: #1E90FF;
     }
 
     .bg-dark {
@@ -69,6 +77,10 @@
 
     #text0 {
         padding-left: 20px;
+    }
+
+    #text0:hover {
+        color: #1E90FF;
     }
 
     /* content */
@@ -251,8 +263,8 @@
                         </li>
                     </ul>
 
-                    <a class="nav-link" href="/register">ลงทะเบียน</a>
-                    <a class="nav-link" href="/login">เข้าสู่ระบบ</a>
+                    <a class="nav-link" href="/register" id="navbarDropdown">ลงทะเบียน</a>
+                    <a class="nav-link" href="/login" id="navbarDropdown">เข้าสู่ระบบ</a>
                 </div>
             </div>
     </div>

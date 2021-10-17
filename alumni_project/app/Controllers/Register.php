@@ -234,12 +234,14 @@ class Register extends Controller
                     'District' => $this->request->getVar('District'),
                     'Province' => $this->request->getVar('Province'),
                     'Zipcode' => $this->request->getVar('Zipcode'),
-                    'phone_number' => $this->request->getVar('phone_number')
+                    'phone_number' => $this->request->getVar('phone_number'),
+                    'status_work'=> $this->request->getVar('status_work'),
+                    'company_name'=> $this->request->getVar('company_name')
                 ];
 
                 $model->save($data);
-                echo "seve";
-                //    return redirect()->to('/login');
+                // echo "seve";
+                   return redirect()->to('/login');
             } else {
                 $data['validation'] = $this->validator;
             }

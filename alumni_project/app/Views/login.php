@@ -45,24 +45,25 @@
     }
 
     .navbar-brand:hover {
-            color:#1E90FF;
+        color: #1E90FF;
 
-        }
-        .nav-link{
-            color:#FFFFFF;
-        }
-        .nav-link:hover {
-            color:#1E90FF;
-            /* background-color: #1E90FF; */
-        }
-        
-       #nav:hover{
-        color:#1E90FF;
-       }
-  
+    }
+
+    .nav-link {
+        color: #FFFFFF;
+    }
+
+    .nav-link:hover {
+        color: #1E90FF;
+        /* background-color: #1E90FF; */
+    }
 
     .nav-link:visited {
         color: #FFFFFF;
+    }
+
+    #navbarDropdown:hover {
+        color: #1E90FF;
     }
 
     .bg-dark {
@@ -209,7 +210,7 @@
                         </li>
 
                     </ul>
-                    <a class="nav-link" id="nav" href="/register">ลงทะเบียน</a>
+                    <a class="nav-link" href="/register" id="navbarDropdown">ลงทะเบียน</a>
                 </div>
             </div>
         </nav>

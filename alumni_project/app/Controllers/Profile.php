@@ -42,6 +42,8 @@ class Profile extends Controller{
                 'Province' => $this->request->getVar('Province'),
                 'Zipcode' => $this->request->getVar('Zipcode'),
                 'phone_number' => $this->request->getVar('phone_number'),
+                'status_work'=> $this->request->getVar('status_work'),
+                'company_name'=> $this->request->getVar('company_name'),
             ];
             $UserModel->update($id,$data);
             $session->set($data);

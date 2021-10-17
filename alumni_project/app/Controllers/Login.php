@@ -65,6 +65,8 @@ class Login extends Controller
                     'Province' => $data['Province'],
                     'Zipcode' => $data['Zipcode'],
                     'phone_number' => $data['phone_number'],
+                    'status_work' => $data['status_work'],
+                    'company_name' => $data['company_name'],
                     'logged_in' => TRUE
                 ];
                 $session->set($ses_data);

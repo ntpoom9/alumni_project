@@ -39,23 +39,25 @@
     }
 
     .navbar-brand:hover {
-        color:#1E90FF;
+        color: #1E90FF;
 
     }
 
-    .nav-link{
-        color:#FFFFFF;
+    .nav-link {
+        color: #FFFFFF;
     }
+
     .nav-link:hover {
-        color:#1E90FF;
+        color: #1E90FF;
         /* background-color: #1E90FF; */
     }
 
     .nav-link:visited {
         color: #FFFFFF;
     }
-    #nav:hover{
-        color:#1E90FF;
+
+    #navbarDropdown:hover {
+        color: #1E90FF;
     }
 
     .bg-dark {
@@ -64,6 +66,10 @@
 
     #text0 {
         padding-left: 20px;
+    }
+
+    #text0:hover {
+        color: #1E90FF;
     }
 
     #u3 {
@@ -178,8 +184,8 @@
                         </li>
                     </ul>
 
-                    <a class="nav-link" id="nav" href="/register">ลงทะเบียน</a>
-                    <a class="nav-link" id="nav" href="/login">เข้าสู่ระบบ</a>
+                    <a class="nav-link" href="/register" id="navbarDropdown">ลงทะเบียน</a>
+                    <a class="nav-link" href="/login" id="navbarDropdown">เข้าสู่ระบบ</a>
                 </div>
             </div>
     </div>

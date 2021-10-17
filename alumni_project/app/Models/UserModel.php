@@ -30,7 +30,10 @@ class UserModel extends Model {
         'District',
         'Province',
         'Zipcode',
-        'phone_number'	
+        'phone_number',
+        'status_work',
+        'company_name',
+        'phone_number',
         ];
 
        

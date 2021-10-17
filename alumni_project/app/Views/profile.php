@@ -25,6 +25,8 @@ $session = session(); ?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <!-- icon tab  -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo_isac.png" />
     <!-- CSS -->
     <style>
     /* font/header/footer  */
@@ -46,18 +48,29 @@ $session = session(); ?>
 
     }
 
-    a.nav-link {
+    .nav-link {
         color: #FFFFFF;
-        decoration: none;
     }
 
     .nav-link:hover {
-        color: #FFFFFF;
-        background-color: #1E90FF;
+        color: #1E90FF;
+        /* background-color: #1E90FF; */
     }
 
     .nav-link:visited {
         color: #FFFFFF;
+    }
+
+    #navbarDropdown:hover {
+        color: #1E90FF;
+    }
+
+    #text0 {
+        padding-left: 20px;
+    }
+
+    #text0:hover {
+        color: #1E90FF;
     }
 
     #bg-drak {
@@ -83,7 +96,7 @@ $session = session(); ?>
     #container {
         background-color: lightgray;
         width: 100%;
-        height: 1100px;
+        height: 1200px;
     }
 
     #u1_text {
@@ -97,7 +110,7 @@ $session = session(); ?>
 
     #u13_div {
         width: 192px;
-        height: 780px;
+        height: 899px;
         /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
         background-color: #001233;
 
@@ -155,6 +168,16 @@ $session = session(); ?>
         text-align: center;
         /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
         background-color: #023e8a;
+    }
+
+    #u17_div {
+        width: 178px;
+        height: 30px;
+        padding: 2px 24px;
+        text-align: center;
+        /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
+        color: #000000;
+        background-color: #FFD700;
     }
 
     #text {
@@ -279,7 +302,7 @@ $session = session(); ?>
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/index">ISAC</a>
+                <a class="navbar-brand" id="text0" href="/index.php/index">ISAC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -288,32 +311,34 @@ $session = session(); ?>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/search_page_index">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากรหัสนักศึกษา</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
 
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
                             aria-labelledby="navbarDropdown">
-                            <li> <a class="dropdown-item" href="/profile">
+                            <li> <a class="dropdown-item" href="/index.php/profile">
                                     <i class="far fa-address-card"></i>&nbsp;&nbsp;ข้อมูลส่วนตัว</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>" id="logout_btn">
+                            <li><a class="dropdown-item" href="<?php echo base_url('/index.php/Login/logout'); ?>"
+                                    id="logout_btn">
                                     <i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;ออกจากระบบ</a></li>
                         </ul>
                     </div>
@@ -359,15 +384,15 @@ $session = session(); ?>
                             <div id="u16" class="ax_default box_3">
 
                                 <?php $stu_id = $session->get('stu_id');?>
-                                <a href="<?php echo base_url('edit_profile/'.$stu_id);?>" id="text">
+                                <a href="<?php echo base_url('/index.php/edit_profile/'.$stu_id);?>" id="text">
                                     <!-- <a href="/show_edit" id="text"> -->
-                                    <div id="u16_div">
+                                    <div id="u17_div">
                                         <p><span>แก้ไขข้อมูลนักศึกษา</span></p>
                                     </div>
                                 </a>
 
                             </div>
-                            <div id="u18_div" class=""></div>
+                            <!-- <div id="u18_div" class=""></div>
                             <div id="u16" class="ax_default box_3">
                                 <a href="" id="text">
                                     <div id="u16_div">
@@ -382,7 +407,7 @@ $session = session(); ?>
                                         <p><span>พิมพ์ข้มูลนักศึกษา</span></p>
                                     </div>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>
@@ -468,6 +493,18 @@ $session = session(); ?>
                         <div id="u12-1_div" class="u12_div">
                             <p><span>เบอร์โทรติดต่อ</span></p>
                         </div>
+                        <div id="u26_div" class="">
+                            <div id="u27_text" class="text ">
+                                <p><span>ข้อมูลการทำงาน</span></p>
+                            </div>
+                        </div>
+
+                        <div id="u12-1_div" class="u12_div" style="margin-top:38px;">
+                            <p><span>สถานภาพ</span></p>
+                        </div>
+                        <div id="u12-1_div" class="u12_div">
+                            <p><span>สถานที่ทำงาน</span></p>
+                        </div>
 
 
                     </div>
@@ -538,23 +575,19 @@ $session = session(); ?>
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('phone_number'); ?></span></p>
                         </div>
+                        <div class="form-group" style="padding-top: 35px;">
+                            <div id="u12-1_div" class="u13_div">
+                                <p><span><?php echo  $session->get('status_work'); ?></span></p>
+                            </div>
+                            <div id="u12-1_div" class="u13_div">
+                                <p><span><?php echo  $session->get('company_name'); ?></span></p>
+                            </div>
+
+
+                        </div>
 
 
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
 
 
 

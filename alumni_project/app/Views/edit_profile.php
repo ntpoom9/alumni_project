@@ -24,6 +24,9 @@ $session = session(); ?>
     <!-- icon  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- icon tab  -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo_isac.png" />
+
     <!-- CSS -->
     <style>
     /* font/header/footer  */
@@ -45,18 +48,29 @@ $session = session(); ?>
 
     }
 
-    a.nav-link {
+    .nav-link {
         color: #FFFFFF;
-        decoration: none;
     }
 
     .nav-link:hover {
-        color: #FFFFFF;
-        background-color: #1E90FF;
+        color: #1E90FF;
+        /* background-color: #1E90FF; */
     }
 
     .nav-link:visited {
         color: #FFFFFF;
+    }
+
+    #navbarDropdown:hover {
+        color: #1E90FF;
+    }
+
+    #text0 {
+        padding-left: 20px;
+    }
+
+    #text0:hover {
+        color: #1E90FF;
     }
 
     #bg-drak {
@@ -82,7 +96,7 @@ $session = session(); ?>
     #container {
         background-color: lightgray;
         width: 100%;
-        height: 1300px;
+        height: 1400px;
     }
 
     #u1_text {
@@ -282,7 +296,7 @@ $session = session(); ?>
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/index">ISAC</a>
+                <a class="navbar-brand" id="text0" href="/index.php/index">ISAC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -291,16 +305,17 @@ $session = session(); ?>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/search_page_index">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากรหัสนักศึกษา</a>
+                                </li>
                             </ul>
                         </li>
                         <!-- <li class="nav-item">
@@ -310,16 +325,17 @@ $session = session(); ?>
                     </ul>
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
                             aria-labelledby="navbarDropdown">
-                            <li> <a class="dropdown-item" href="/profile">
+                            <li> <a class="dropdown-item" href="/index.php/profile">
                                     <i class="far fa-address-card"></i>&nbsp;&nbsp;ข้อมูลส่วนตัว</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>" id="logout_btn">
+                            <li><a class="dropdown-item" href="<?php echo base_url('/index.php/Login/logout'); ?>"
+                                    id="logout_btn">
                                     <i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;ออกจากระบบ</a></li>
                         </ul>
                     </div>
@@ -344,7 +360,7 @@ $session = session(); ?>
                 </div>
             </a> -->
             <?php $stu_id = $session->get('stu_id');?>
-            <form action="<?= base_url('update/'. $stu_id) ?>" method="POST">
+            <form action="<?= base_url('/index.php/update/'. $stu_id) ?>" method="POST">
                 <input type="hidden" name="_method" value="PUT" />
                 <div id="u1_text">
                     <p><span>แก้ไขประวัติส่วนตัว</span></p>
@@ -436,6 +452,18 @@ $session = session(); ?>
                         </div>
                         <div id="u12-1_div" class="u12_div">
                             <p><span>เบอร์โทรติดต่อ</span></p>
+                        </div>
+                        <div id="u26_div" class="">
+                            <div id="u27_text" class="text ">
+                                <p><span>ข้อมูลการทำงาน</span></p>
+                            </div>
+                        </div>
+
+                        <div id="u12-1_div" class="u12_div" style="margin-top:38px;">
+                            <p><span>สถานภาพ</span></p>
+                        </div>
+                        <div id="u12-1_div" class="u12_div">
+                            <p><span>สถานที่ทำงาน</span></p>
                         </div>
 
 
@@ -531,6 +559,42 @@ $session = session(); ?>
                                     value="<?php echo  $session->get('phone_number'); ?>" /></p>
                             </p>
                         </div>
+                        <div id="u12-1_div" class="u13_div" style="margin-top:38px;">
+                            <p>
+                                <?php if($session->get('status_work')=='ทำงานแล้ว'){?>
+                                <input class="form-check-input" type="radio" name="status_work" id="status_work"
+                                    value="ทำงานแล้ว" checked>
+                                <label class="form-check-label" for="status_work">
+                                    ทำงานแล้ว
+                                </label>
+                                <input class="form-check-input" type="radio" name="status_work" id="status_work"
+                                    value="ไม่ได้ทำงาน">
+                                <label class="form-check-label" for="status_work">
+                                    ไม่ได้ทำงาน
+                                </label>
+                                <?php } else { ?>
+                                <input class="form-check-input" type="radio" name="status_work" id="status_work"
+                                    value="ทำงานแล้ว">
+                                <label class="form-check-label" for="status_work">
+                                    ทำงานแล้ว
+                                </label>
+                                <input class="form-check-input" type="radio" name="status_work" id="status_work"
+                                    value="ไม่ได้ทำงาน" checked>
+                                <label class="form-check-label" for="status_work">
+                                    ไม่ได้ทำงาน
+                                </label>
+                                <?php } ?>
+
+
+
+                            </p>
+                        </div>
+
+                        <div id="u12-1_div" class="u13_div">
+                            <p><input id="company_name" type="text" name="company_name"
+                                    value="<?php echo  $session->get('company_name'); ?>" /></p>
+                            </p>
+                        </div>
 
 
                     </div>
@@ -546,7 +610,7 @@ $session = session(); ?>
                         <input type="hidden" name="stu_id" value="<?php echo $users['user_id']; ?>">
                         <button type="submit" id="submit" class="btn btn-warning"
                             onclick="submit()">อัพเดทข้อมูล</button>
-                        <a href=" /profile" class="btn btn-danger">ยกเลิก</a>
+                        <a href="/index.php/profile" class="btn btn-danger">ยกเลิก</a>
 
                     </center>
                 </div>
