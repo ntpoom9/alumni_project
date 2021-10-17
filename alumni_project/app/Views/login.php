@@ -45,14 +45,21 @@
     }
 
     .navbar-brand:hover {
-        color: #FFFFFF;
+            color:#1E90FF;
 
-    }
-
-    .nav-link:hover {
-        color: #FFFFFF;
-        background-color: #1E90FF;
-    }
+        }
+        .nav-link{
+            color:#FFFFFF;
+        }
+        .nav-link:hover {
+            color:#1E90FF;
+            /* background-color: #1E90FF; */
+        }
+        
+       #nav:hover{
+        color:#1E90FF;
+       }
+  
 
     .nav-link:visited {
         color: #FFFFFF;
@@ -202,7 +209,7 @@
                         </li>
 
                     </ul>
-                    <a class="nav-link" href="/register">ลงทะเบียน</a>
+                    <a class="nav-link" id="nav" href="/register">ลงทะเบียน</a>
                 </div>
             </div>
         </nav>
