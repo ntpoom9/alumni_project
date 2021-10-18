@@ -22,7 +22,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/index.css"> 
+    <link rel="stylesheet" href="/css/index.css"> 
    
 
 </head>
