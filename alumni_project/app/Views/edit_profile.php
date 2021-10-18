@@ -28,8 +28,9 @@ $session = session(); ?>
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo_isac.png" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/edit_profile.css">
 
+    <link rel="stylesheet" href="/css/edit_profile.css">
+   
 
 </head>
 
@@ -68,8 +69,10 @@ $session = session(); ?>
                     </ul>
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>

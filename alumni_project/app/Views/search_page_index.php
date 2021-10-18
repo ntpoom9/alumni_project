@@ -27,7 +27,7 @@ ini_set('display_errors', 1);
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/search_page_index.css">
+    <link rel="stylesheet" href="/css/search_page_index.css">
 
     <title>Search Page</title>
 </head>
