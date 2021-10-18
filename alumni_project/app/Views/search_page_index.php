@@ -93,10 +93,10 @@ ini_set('display_errors', 1);
                     <h4>ค้นหาข้อมูลศิษย์เก่า</h4>
                 </center>
                 <div class="card-body">
-
+                    <hr>
                     <!-- toggle-table-seach -->
 
-                    <table class="table table-condensed" style="border-collapse:collapse;">
+                    <!-- <table class="table table-condensed" style="border-collapse:collapse;">
                         <thead>
                             <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
                                 <td id="table_title">
@@ -156,7 +156,8 @@ ini_set('display_errors', 1);
                                 </div>
                             </td>
                         </tbody>
-                    </table><!-- toggle-table-seach -->
+                    </table> -->
+                    <!-- toggle-table-seach -->
 
 
                     <!-- table data  -->
