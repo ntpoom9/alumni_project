@@ -28,6 +28,7 @@ $session = session(); ?>
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo_isac.png" />
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="/css/edit_profile.css">
    
 
@@ -68,8 +69,10 @@ $session = session(); ?>
                     </ul>
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
+
                         <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>
@@ -103,7 +106,7 @@ $session = session(); ?>
                 </div>
             </a> -->
             <?php $stu_id = $session->get('stu_id');?>
-            <form action="<?= base_url('/index.php/update/'. $stu_id) ?>" method="POST">
+            <form action="<?= base_url('/update/'. $stu_id) ?>" method="POST">
                 <input type="hidden" name="_method" value="PUT" />
                 <div id="u1_text">
                     <p><span>แก้ไขประวัติส่วนตัว</span></p>
@@ -353,7 +356,7 @@ $session = session(); ?>
                         <input type="hidden" name="stu_id" value="<?php echo $users['user_id']; ?>">
                         <button type="submit" id="submit" class="btn btn-warning"
                             onclick="submit()">อัพเดทข้อมูล</button>
-                        <a href="/index.php/profile" class="btn btn-danger">ยกเลิก</a>
+                        <a href="/profile" class="btn btn-danger">ยกเลิก</a>
 
                     </center>
                 </div>

@@ -67,6 +67,7 @@ $session = session(); ?>
                     <div class="btn-group">
                         <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>
