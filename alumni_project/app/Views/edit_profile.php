@@ -29,7 +29,7 @@ $session = session(); ?>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/edit_profile.css">
-   
+
 
 </head>
 
@@ -39,7 +39,7 @@ $session = session(); ?>
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/index.php/index">ISAC</a>
+                <a class="navbar-brand" id="text0" href="/index">ISAC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -48,16 +48,16 @@ $session = session(); ?>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากรหัสนักศึกษา</a>
+                                <li><a class="dropdown-item" href="/search_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a>
                                 </li>
                             </ul>
                         </li>
@@ -68,16 +68,16 @@ $session = session(); ?>
                     </ul>
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
                             aria-labelledby="navbarDropdown">
-                            <li> <a class="dropdown-item" href="/index.php/profile">
+                            <li> <a class="dropdown-item" href="/profile">
                                     <i class="far fa-address-card"></i>&nbsp;&nbsp;ข้อมูลส่วนตัว</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('/index.php/Login/logout'); ?>"
+                            <li><a class="dropdown-item" href="<?php echo base_url('/Login/logout'); ?>"
                                     id="logout_btn">
                                     <i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;ออกจากระบบ</a></li>
                         </ul>
@@ -103,7 +103,7 @@ $session = session(); ?>
                 </div>
             </a> -->
             <?php $stu_id = $session->get('stu_id');?>
-            <form action="<?= base_url('/index.php/update/'. $stu_id) ?>" method="POST">
+            <form action="<?= base_url('/update/'. $stu_id) ?>" method="POST">
                 <input type="hidden" name="_method" value="PUT" />
                 <div id="u1_text">
                     <p><span>แก้ไขประวัติส่วนตัว</span></p>
@@ -353,7 +353,7 @@ $session = session(); ?>
                         <input type="hidden" name="stu_id" value="<?php echo $users['user_id']; ?>">
                         <button type="submit" id="submit" class="btn btn-warning"
                             onclick="submit()">อัพเดทข้อมูล</button>
-                        <a href="/index.php/profile" class="btn btn-danger">ยกเลิก</a>
+                        <a href="/profile" class="btn btn-danger">ยกเลิก</a>
 
                     </center>
                 </div>
